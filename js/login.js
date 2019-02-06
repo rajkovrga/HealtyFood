@@ -23,7 +23,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 else if(xtr.status == 200)
                 {
                     window.location.assign("http://localhost:5501/index.php")
-
                 }
             });
 

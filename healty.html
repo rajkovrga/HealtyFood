@@ -1,14 +1,6 @@
+
 <!DOCTYPE html>
-<html lang="en">
-<?php session_start();
-
-if (isset($_SESSION['logged_in'])) {
-    if ($_SESSION['logged_in'] == true) {
-        header("Location: index.php");
-    }
-
-}
-?>
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,31 +21,28 @@ if (isset($_SESSION['logged_in'])) {
 </head>
 
 <body>
-<div class="container-fluid cFluid">
-    <?php require_once __DIR__ . '/menu/showMenu.php'; ?>
-    <h2 class='text-center titlePage'>Logovanje</h2>
-    <div class="col-12 loginUser d-flex justify-content-center">
 
-        <div class=" col-lg-5 col-md-7  d-flex justify-content-around  flex-column align-items-center formLogin">
+<nav class="navbar row navbar-expand-sm d-flex flex-row">
+    <div class=" menu col-md-4 col-lg-4 col-sm-4 col-4">
+        <a href="#"><img src="img/logo.png" alt=""></a>
+    </div>
+    <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+    </button>
+    <div class="menuContent row collapse navbar-collapse col-md-8 col-lg-8 col-sm-8 col-12" id="navbarTogglerDemo02">
+        <ul class=" navbar-nav  d-flex  align-items-center justify-content-between col-12" >
+            <li class="nav-link"> <a href="">Pocetna</a> </li>
+            <li class="nav-link"> <a href=" ">Zdravlje</a></li>
+            <li class="nav-link"> <a href="">Recepti</a></li>
+            <li class="nav-link"> <a href="">Knjige</a> </li>
+            <li class="nav-link">   <a href="">Logovanje</a> </li>
+              
+            </li>
 
-            <p>Korisnicko ime</p>
-            <form>
-                <input type="text" class="form-control" name="username" id="username">
-                <p>Lozinka</p>
-                <input type="password" class="form-control" name="password" id="password">
-                <input class='btn btn-outline-success' type="button" id="login" value="Logovanje">
-            </form>
-            <p>Niste registrovani? <a href="registration.php">Registrujte se</a></p>
-            <p id="result"></p>
-        </div>
-
+        </ul>
     </div>
 
-
-</div>
-
-<script src="js/functions.js"></script>
-<script src="js/login.js"></script>
+</nav>
 </body>
-
 </html>

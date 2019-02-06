@@ -23,29 +23,7 @@ session_start();
 <body>
 <div class="container-fluid cFluid">
 
-    <nav class="navbar row navbar-expand-sm d-flex flex-row">
-        <div class=" menu col-md-4 col-lg-4 col-sm-4 col-4">
-            <a href="#"><img src="img/logo.png" alt=""></a>
-        </div>
-        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
-        </button>
-        <div class="menuContent row collapse navbar-collapse col-md-8 col-lg-8 col-sm-8 col-12" id="navbarTogglerDemo02">
-            <ul class=" navbar-nav  d-flex  align-items-center justify-content-between col-12" >
-                <li class="nav-link"> <a href="">Pocetna</a> </li>
-                <li class="nav-link"> <a href=" ">Zdravlje</a></li>
-                <li class="nav-link"> <a href="">Recepti</a></li>
-                <li class="nav-link"> <a href="">Knjige</a> </li>
-                <li class="nav-link">  <?php
-                    require_once __DIR__ . '/LoginAndRegistration/headerUsername.php';
-                    ?>
-                </li>
-
-            </ul>
-        </div>
-
-    </nav>
+   <?php require_once __DIR__ . '/menu/showMenu.php'; ?>
 
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="4000" data-pause="false">
         <ol class="carousel-indicators carouselPointers ">
@@ -55,10 +33,10 @@ session_start();
         </ol>
         <div class="carousel-inner innerCarousel">
             <div class="carousel-item active carouselItem">
-                <img class="d-block " src="img/slider1.jpg" alt="First slide">
+                <img class="d-block " src="img/slider2.jpg" alt="Second slide">
             </div>
             <div class="carousel-item carouselItem">
-                <img class="d-block " src="img/slider2.jpg" alt="Second slide">
+                <img class="d-block " src="img/slider1.jpg" alt="First slide">
             </div>
             <div class="carousel-item carouselItem">
                 <img class="d-block " src="img/slider3.jpg" alt="Third slide">
@@ -75,9 +53,9 @@ session_start();
         </div>
 
     </div>
-    <div class="row d-flex justify-content-around boxes">
+    <div class="row d-flex justify-content-around flex-wrap boxes">
 
-        <div class="col-10 col-xs-10 col-sm-9 col-md-3 col-lg- box">
+        <div class=" box">
             <h3>Voce</h3>
             <img src="img/fruit.jpg" alt="">
             <p> <b>Voće</b> je bogat izvor vitamina, mada ih, u poređenju sa povrćem,sadrži manje. Od vitamina voće sadrži
@@ -87,7 +65,7 @@ session_start();
                 količinama voće sadrži i druge vitamine: К, Е, vitamine B grupe</p>
 
         </div>
-        <div class="col-10 col-sm-9 col-md-3 col-lg-3 box">
+        <div class=" box">
             <h3>Zitarice</h3>
             <img src="img/zitarice.png" alt="">
             <p>
@@ -97,7 +75,7 @@ session_start();
                 Žitarice u zrnu uzgajaju se u većim količinama i pružaju više energije od bilo koje druge vrste useva. One su
                 sortirani usevi. </p>
         </div>
-        <div class="col-10 col-sm-9 col-md-3 col-lg-3 box">
+        <div class=" box">
             <h3>Povrce</h3>
             <img src="img/vegetables.jpg" alt="">
             <p>
@@ -112,7 +90,6 @@ session_start();
 
     </div>
 </div>
-<a href="logout.php">Odjavi se</a>
 
 </body>
 

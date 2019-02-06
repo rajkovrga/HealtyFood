@@ -25,32 +25,9 @@ if(isset($_SESSION['logged_in'])) {
 </head>
 <body>
   <div class="container-fluid cFluid">
-    <nav class="navbar row navbar-expand-sm d-flex flex-row">
-      <div class=" menu col-md-4 col-lg-4 col-sm-4 col-4">
-        <a href="#"><img src="img/logo.png" alt=""></a>
-      </div>
-      <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="menuContent row collapse navbar-collapse col-md-8 col-lg-8 col-sm-8 col-12" id="navbarTogglerDemo02">
-        <ul class=" navbar-nav  d-flex  align-items-center justify-content-between col-12" >
-          <li class="nav-link"> <a href="">Pocetna</a> </li>
-          <li class="nav-link"> <a href=" ">Zdravlje</a></li>
-          <li class="nav-link"> <a href="">Recepti</a></li>
-          <li class="nav-link"> <a href="">Knjige</a> </li>
-          <li class="nav-link">
-              <?php
-                require_once __DIR__ . '/LoginAndRegistration/headerUsername.php';
-              ?>
+      <?php require_once __DIR__ . '/menu/showMenu.php'; ?>
 
-          </li>
-
-        </ul>
-      </div>
-
-    </nav>
-<h2 class='text-center titlePage'>Registracija</h2>
+      <h2 class='text-center titlePage'>Registracija</h2>
     <div class="col-12 loginUser d-flex justify-content-center">
     <div class=" col-lg-5 col-md-7  d-flex justify-content-around  flex-column align-items-center formLogin">
         <form>

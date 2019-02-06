@@ -6,6 +6,5 @@ if(isset($_SESSION['logged_in']) )
 }
 else
 {
-    echo  "<a href='login.php'>Logovanje <i class='fa fa-user' aria-hidden='true''></i></a>";
-
+    echo  "<a href=". $i->href .">". $i->nameMenu ."<i class='fa fa-user' aria-hidden='true''></i> </a>";
 }

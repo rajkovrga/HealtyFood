@@ -41,7 +41,12 @@ document.addEventListener('DOMContentLoaded',function () {
                 "UserMail":email.value,
                 "UserPassword":passFirst.value
             }
-
+            uName.value = "";
+            lName.value = "";
+            passFirst.value="";
+            passSecond.value="";
+            email.value="";
+            fName.value="";
             ht.addEventListener('load',function () {
                 let result = document.getElementById('result');
                 if(ht.status == 422)

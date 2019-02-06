@@ -29,7 +29,7 @@ if (preg_match($passwordReg, $obj->UserPassword) &&
             ':fname' => $obj->FirstName,
             ':lname' => $obj->LastName,
             ':password' => password_hash($obj->UserPassword, PASSWORD_BCRYPT),
-            ':statusID' => 1,
+            ':statusID' => 2,
             ':token' => $token
         ]);
 

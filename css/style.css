@@ -28,13 +28,14 @@ nav
     height:65px;
     justify-content: space-between !important ;
     padding:0px 20px !important;
-    padding-right: 20px !important;
+    padding-right: 2px !important;
     border-bottom: 3px solid rgb(75, 167, 67);
     color:rgb(16, 119, 16) !important;
     position: sticky !important;
-    background: rgba(255, 255, 255, 0.774);
+    background: rgba(255, 255, 255, 0.874);
     z-index: 200;
     top: 0px ;
+
 }
 
 nav img
@@ -42,20 +43,34 @@ nav img
     width:60px;
     height:60px;
 }
-nav ul
+nav ul:first-child
 {
     display: flex !important;
-    justify-content: space-around !important;
+    justify-content: space-between !important;
     position: relative;
 
+}
+nav ul li
+{
+    border-bottom: 4px solid rgba(58, 147, 22, 0.6);
+}
+nav ul li:last-child
+{
+    border-bottom: none;
 }
 nav ul li a
 {
     color:rgb(16, 119, 16) !important;
     font-size:1.1em;
 
-}
 
+}
+nav ul li label
+{
+    color:rgb(16, 119, 16) !important;
+    font-size:1.1em;
+    padding-right: 8px !important;
+}
 
 
 .container-fluid
@@ -181,7 +196,7 @@ button i
 .boxes .box
 {
     height: auto;
-
+    width: 30%;
     background: rgba(18, 99, 12, 0.87);
     border-radius: 10px;
     display:flex;
@@ -195,7 +210,7 @@ button i
 .boxes .box img
 {
     width:81%;
-    height: 150px;
+    height: 178px;
     border-radius: 10px;
 }
 .boxes .box h3
@@ -279,9 +294,46 @@ button i
     color: #35ff4c;
     font-size: 1.3em;
 }
-@media screen and (max-width:575px)
+.user
 {
+    text-align: center;
+}
+.user a
+{
+    font-size: 1.2em !important;
+}
+.user i.btn
+{
+    font-size:1.4em !important;
+}
+.dropMenu
+{
+    background: rgba(255, 255, 255, 0.774);
+    width:18% !important;
+    margin-top: 15px !important;
+}
+.dropMenu li
+{
+    padding:14px 1px !important;
+    text-align: center;
+    color:rgb(8, 68, 0) !important;
 
+}
+.dropMenu li a
+{
+    font-size: 1.1em !important;
+
+}
+.navbarMenu
+{
+position: relative !important;
+}
+@media screen and (max-width:767px)
+{
+    .box
+    {
+        width:44% !important;
+    }
     nav
     {
         padding: 0px !important;
@@ -289,18 +341,47 @@ button i
     nav ul
     {
         background: rgba(98, 184, 87, 0.959);
-
+border: none !important;
     }
     nav ul li
     {
-        padding:7px !important;    }
+
+        padding:7px !important;
+        padding-bottom: 0px !important;
+    }
+    nav ul li:last-child
+    {
+        color: rgb(8, 68, 0) !important;
+        border-bottom: 4px solid rgba(58, 147, 22, 0.6);
+
+    }
     nav ul li a
     {
-        color:rgb(8, 68, 0) !important;
     }
+    .user ul
+    {
+        margin:0px !important;
+    }
+    .user ul li
+    {
+        background: rgba(98, 184, 87, 0.959);
+        border:none !important;
+        padding:0px !important;
+
+    }
+}
+@media screen and (max-width:575px)
+{
     .formLogin input
     {
         margin: 7px 0px !important;
         width:96%;
+    }
+}
+@media screen and (max-width:767px)
+{
+    .box
+    {
+        width:85% !important;
     }
 }
