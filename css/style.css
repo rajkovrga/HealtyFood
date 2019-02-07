@@ -1,387 +1,489 @@
-*
-{
-    padding:0px !important;
-    margin:0px !important;
+* {
+    padding: 0px !important;
+    margin: 0px !important;
     list-style: none;
     text-decoration: none !important;
 }
-.cFluid
-{
-    width:100% !important;
+ .active{
+     background: rgb(99, 182, 99) !important;
+     color:white !important;
+ }
+ .active-content
+ {
+     background: white !important;
+ }
+.cFluid {
+    width: 100% !important;
 }
-.errorStar
-{
-    color: #ff293d;
-    background-color: rgba(181, 255, 161,0.2);
-    font-size:0.86em;
-}
-.addBorderError
-{
-    border:2px solid #ff6154 !important;
-}
-nav
-{
 
+.errorStar {
+    color: #ff293d;
+    background-color: rgba(181, 255, 161, 0.2);
+    font-size: 0.86em;
+}
+
+.addBorderError {
+    border: 2px solid #ff6154 !important;
+}
+
+.navigation {
     display: flex;
     width: 100% !important;
     align-items: center;
-    height:65px;
-    justify-content: space-between !important ;
-    padding:0px 20px !important;
+    height: 65px;
+    justify-content: space-between !important;
+    padding: 0px 20px !important;
     padding-right: 2px !important;
     border-bottom: 3px solid rgb(75, 167, 67);
-    color:rgb(16, 119, 16) !important;
+    color: rgb(16, 119, 16) !important;
     position: sticky !important;
     background: rgba(255, 255, 255, 0.874);
     z-index: 200;
-    top: 0px ;
-
+    top: 0px;
 }
 
-nav img
-{
-    width:60px;
-    height:60px;
+.navigation img {
+    width: 60px !important;
+    height: 60px !important;
 }
-nav ul:first-child
-{
+
+.navigation .menuContent:first-child {
     display: flex !important;
     justify-content: space-between !important;
-    position: relative;
-
+    position: relative !important;
 }
-nav ul li
-{
+
+.navigation .menuContent li {
     border-bottom: 4px solid rgba(58, 147, 22, 0.6);
 }
-nav ul li:last-child
-{
+
+.navigation .menuContent li:last-child {
     border-bottom: none;
 }
-nav ul li a
-{
-    color:rgb(16, 119, 16) !important;
-    font-size:1.1em;
 
-
+.navigation li a {
+    color: rgb(16, 119, 16) !important;
+    font-size: 1.1em;
 }
-nav ul li label
-{
-    color:rgb(16, 119, 16) !important;
-    font-size:1.1em;
+
+.navigation .menuContent li label {
+    color: rgb(16, 119, 16) !important;
+    font-size: 1.1em;
     padding-right: 8px !important;
 }
 
-
-.container-fluid
-{
-    width:100%;
+.container-fluid {
+    width: 100%;
 }
-nav .menu
-{
+
+.navigation  .menu {
     margin-bottom: 10px;
-    margin-left:10px;
+  
 }
 
-#carouselExampleIndicators
-{
-    width:100% !important;
+#carouselExampleIndicators {
+    width: 100% !important;
     height: 540px !important;
     position: relative !important;
 }
-button i
-{
+
+button i {
     margin-right: 20px !important;
-    border:1px solid rgb(14, 99, 3);
-    padding:4px 6px !important;
+    border: 1px solid rgb(14, 99, 3);
+    padding: 4px 6px !important;
     font-size: 1.2em;
 }
-#carouselExampleIndicators a i
-{
+
+#carouselExampleIndicators a i {
     opacity: 1;
 }
-.carouselItem
-{
-    width:100%;
+
+.carouselItem {
+    width: 100%;
     height: 100% !important;
 }
-.carouselItem img
-{
+
+.carouselItem img {
     height: 100%;
     width: 100%;
 }
-.innerCarousel
-{
-    width:100%;
+
+.innerCarousel {
+    width: 100%;
     height: 100% !important;
 }
-.controlIcon
-{
+
+.controlIcon {
     position: fixed;
     z-index: 20;
     bottom: 0px;
 }
-.carouselPointers
-{
+
+.carouselPointers {
     width: 100%;
     display: flex;
     justify-content: center;
 }
-.carouselPointers .active
-{
+
+.carouselPointers .active {
     background: rgb(77, 73, 73);
 }
-.carouselPointers li
-{
+
+.carouselPointers li {
     background: rgb(230, 228, 228);
     margin-right: 3px !important;
-    border:1px solid black;
-    width:45px;
+    border: 1px solid black;
+    width: 45px;
 }
-.carousel-control
-{
-    border:1px solid black;
-    padding:18px !important;
+
+.carousel-control {
+    border: 1px solid black;
+    padding: 18px !important;
     font-size: 2.4em !important;
     background-color: rgb(66, 62, 62);
-    border-radius: 50px;}
-.carousel-control:hover
-{
-    background-color: rgb(51, 50, 50);
-
+    border-radius: 50px;
 }
-.carouselTitle
-{
-    width:280px;
+
+.carousel-control:hover {
+    background-color: rgb(51, 50, 50);
+}
+
+.carouselTitle {
+    width: 280px;
     position: absolute;
-    top:0px;
+    top: 0px;
     height: 100%;
-    width:100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-
-
 }
-.carouselTitle .title
-{
-    height:40%;
+
+.carouselTitle .title {
+    height: 40%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    padding:0px 10px !important;
+    padding: 0px 10px !important;
     align-items: center;
     border-radius: 10px;
     background: rgba(207, 194, 194, 0.603);
 }
 
-.carouselTitle .title h1
-{
-    font-size:1.9em;
+.carouselTitle .title h1 {
+    font-size: 1.9em;
     padding-bottom: 20px !important;
 }
-.carouselTitle .title img
-{
+
+.carouselTitle .title img {
     margin-bottom: 20px !important;
-    width:100px;
+    width: 100px;
     height: 100px;
 }
-.boxes
-{
+
+.boxes {
     text-align: center;
     padding: 30px 0px !important;
-
 }
-.boxes .box
-{
+
+.boxes .box {
     height: auto;
     width: 30%;
     background: rgba(18, 99, 12, 0.87);
     border-radius: 10px;
-    display:flex;
+    display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    color:black;
-    padding:20px 10px !important;
-    margin-bottom:30px !important;
+    color: black;
+    padding: 20px 10px !important;
+    margin-bottom: 30px !important;
 }
-.boxes .box img
-{
-    width:81%;
+
+.boxes .box img {
+    width: 81%;
     height: 178px;
     border-radius: 10px;
 }
-.boxes .box h3
-{color:white;
+
+.boxes .box h3 {
+    color: white;
     padding-bottom: 10px !important;
 }
-.boxes .box p
-{
-    color:rgb(29, 29, 29);
-}
-.boxes .box p b
-{
-    font-size:1.3em;
-}
-.loginUser
-{
-    padding:70px 3px !important;
+
+.boxes .box p {
+    color: rgb(29, 29, 29);
 }
 
-.titlePage
-{
+.boxes .box p b {
+    font-size: 1.3em;
+}
+
+.loginUser {
+    padding: 70px 3px !important;
+}
+
+.titlePage {
     padding-top: 30px!important;
-    color:rgb(26, 82, 29);
+    color: rgb(26, 82, 29);
     font-size: 2.3em;
+    padding-bottom: 25px !important;
 }
-.formLogin
-{
-    text-align: center;
 
-    padding:26px 10px !important;
+.formLogin {
+    text-align: center;
+    padding: 26px 10px !important;
     background: rgba(37, 126, 25, 0.74);
-    font-size:  1.2em;
+    font-size: 1.2em;
 }
-.formLogin form
-{
-    width:100%;
+
+.formLogin form {
+    width: 100%;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
-}.formLogin form
- {
-     font-size:1.14em;
- }
-.formLogin form input
-{
-    width:60% !important;
+}
+
+.formLogin form {
+    font-size: 1.14em;
+}
+
+.formLogin form   input[type="text"],input[type="button"]  {
     margin: 7px 0px !important;
-    padding:4px 3px !important;
+    padding: 4px 3px !important;
     font-size: 0.9em;
-    border:none;
+    border: none;
     background: rgb(255, 255, 255);
 }
-.formLogin input:focus
-{
+
+.formLogin input[type="text"]:focus {
     transition: 0.6s;
-    border:none;
-    border: 3px solid rgb(19, 73, 11);    outline: none;
+    border: none;
+    border: 3px solid rgb(19, 73, 11);
+    outline: none;
 }
 
-.formLogin input[type='button']
-{
-    width:240px;
-    margin-top:14px !important;
-    padding:10px 0px !important;
-    border:none;
+.formLogin textarea:focus {
+    transition: 0.6s;
+    border: none;
+    border: 3px solid rgb(19, 73, 11);
+    outline: none;
 }
 
-.formLogin input[type='button']:hover
-{
-    border:2px solid white;
+
+.formLogin input[type='button'] {
+    width: 240px;
+    margin-top: 14px !important;
+    padding: 10px 0px !important;
+    border: none;
+}
+
+.formLogin input[type='button']:hover {
+    border: 2px solid white;
     transition: 0.6s;
 }
-.formLogin a
-{
-    color:rgb(255, 255, 255);
+
+.formLogin a {
+    color: rgb(255, 255, 255);
 }
-#result
+form p 
 {
-    padding:20px 5px !important;
+    padding:6px 0px !important;
+}
+#result {
+    padding: 20px 5px !important;
     color: #35ff4c;
     font-size: 1.3em;
 }
-.user
-{
+
+.user {
     text-align: center;
 }
-.user a
-{
+
+.user a {
     font-size: 1.2em !important;
 }
-.user i.btn
-{
-    font-size:1.4em !important;
+
+.user i.btn {
+    font-size: 1.4em !important;
 }
-.dropMenu
-{
+
+.dropMenu {
     background: rgba(255, 255, 255, 0.774);
-    width:18% !important;
+    width: 18% !important;
     margin-top: 15px !important;
 }
-.dropMenu li
-{
-    padding:14px 1px !important;
+
+.dropMenu li {
+    padding: 14px 1px !important;
     text-align: center;
-    color:rgb(8, 68, 0) !important;
-
+    color: rgb(8, 68, 0) !important;
 }
-.dropMenu li a
-{
+
+.dropMenu li a {
     font-size: 1.1em !important;
+}
+
+.menuContent {
+    position: relative !important;
+}
+
+#add-content
+{
+    margin-top:40px !important;
+    text-align: center !important;
+   
+}#add-content nav
+{
+    padding-bottom: 20px !important;
+}
+.title-add
+{
+    font-size: 2.1em !important;
+}
+#add-content nav a
+{
+    color:green;
+padding:10px 0px !important;
+margin:0px 10px !important;
 
 }
-.navbarMenu
+.nav-buttons .nav-item
 {
-position: relative !important;
+    text-align: center;
+margin-bottom: 13px !important;
 }
-@media screen and (max-width:767px)
+.tab-content div
 {
-    .box
+color:black !important;
+}
+textarea{
+    resize: none;
+    height: 140px !important;
+    padding:4px !important;
+}
+.p-video
+{
+    padding-bottom: 14px !important;
+}
+input[type='file']
+{
+    width: 200px !important;
+    padding-bottom: 14px !important;
+}
+span label
+{
+    color:rgb(10, 58, 3);
+}
+
+.book
+{
+    display: flex;
+    flex-direction: column;
+    padding:10px !important;
+    align-items: center;
+    margin-bottom: 15px !important;
+}
+.book p
+{
+    padding:9px 0px !important;
+}
+.book a
+{
+    width: 200px;
+    padding:4px !important;
+    color:rgb(12, 194, 12);
+    text-align: center;
+
+}
+.book a:hover
+{
+    color:white;
+    background: rgba(91, 219, 79, 0.719);
+
+}
+.book:nth-child(odd)
+{
+    margin-left: 20% !important;
+}
+.book:nth-child(even)
+{
+    margin-right: 20% !important;
+}
+@media screen and (max-width:767px) {
+    .dropMenu
     {
-        width:44% !important;
+        background: rgba(53, 185, 53, 0.253) !important;
+        border:none !important;
+
     }
-    nav
+    .book:nth-child(odd)
+{
+    margin-left: 0% !important;
+}
+.book:nth-child(even)
+{
+    margin-right: 0% !important;
+}
+.book h3
+{
+    text-align: center
+}
+
+    .dropMenu li
     {
+                border:none !important;
+
+    }
+    .box {
+        width: 44% !important;
+    }
+    .navigation {
         padding: 0px !important;
     }
-    nav ul
-    {
-        background: rgba(98, 184, 87, 0.959);
-border: none !important;
+   
+    .navigation .menuContent {
+        background: rgba(98, 184, 87, 0.959) !important;
+        border: none !important;
+        width: 100% !important;
     }
-    nav ul li
-    {
-
-        padding:7px !important;
+    .navigation .menuContent li {
+        padding: 7px !important;
         padding-bottom: 0px !important;
     }
-    nav ul li:last-child
-    {
+    .navigation .menuContent li:last-child {
         color: rgb(8, 68, 0) !important;
         border-bottom: 4px solid rgba(58, 147, 22, 0.6);
+    }
+    .user ul {
+        margin: 0px !important;
+        width: 100px !important;
+    }
+   
+    .user .menuContent li {
+        background: rgba(98, 184, 87, 0.959) !important;
+        border: none !important;
+        
+        margin: 0px !important;
+    }
 
-    }
-    nav ul li a
-    {
-    }
-    .user ul
-    {
-        margin:0px !important;
-    }
-    .user ul li
-    {
-        background: rgba(98, 184, 87, 0.959);
-        border:none !important;
-        padding:0px !important;
-
-    }
 }
-@media screen and (max-width:575px)
-{
-    .formLogin input
-    {
+
+@media screen and (max-width:575px) {
+    .formLogin   input[type="text"],input[type="button"]  {
         margin: 7px 0px !important;
-        width:96%;
+        width: 96%;
+    }
+    .formLogin input[type="button"]  {
+        margin: 7px 0px !important;
+        width: 96%;
     }
 }
-@media screen and (max-width:767px)
-{
-    .box
-    {
-        width:85% !important;
+
+@media screen and (max-width:767px) {
+    .box {
+        width: 85% !important;
     }
 }
