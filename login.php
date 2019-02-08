@@ -38,18 +38,16 @@ if (isset($_SESSION['logged_in'])) {
 
             <p>Korisnicko ime</p>
             <form>
-                <input type="text" class=" col-sm-7 col-lg-7 col-md-7 col-xs-12 form-control" name="username" id="username">
+                <input type="text" class=" col-sm-7 col-lg-7 col-md-7 col-xs-12 form-control-success" name="username" id="username">
                 <p>Lozinka</p>
-                <input type="password" class="col-sm-7 col-lg-7 col-md-7 col-xs-12 form-control" name="password" id="password">
-                <input class='btn btn-outline-success' type="button" id="login" value="Logovanje">
+                <input type="password" class="col-sm-7 col-lg-7 col-md-7 col-xs-12 form-control-success" name="password" id="password">
+                <input class='btn btn-outline-success border border-success' type="button" id="login" value="Logovanje">
             </form>
             <p>Niste registrovani? <a href="registration.php">Registrujte se</a></p>
             <p id="result"></p>
         </div>
 
     </div>
-
-
 </div>
 
 <script src="js/functions.js"></script>

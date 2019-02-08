@@ -32,17 +32,17 @@ if(isset($_SESSION['logged_in'])) {
     <div class=" col-lg-5 col-md-7  d-flex justify-content-around  flex-column align-items-center formLogin">
         <form>
         <p>Korisnicko ime</p>
-        <input type="text" class="col-sm-7 col-lg-7 col-md-7 col-xs-12 form-control" name="username" id="username">
+        <input type="text" class="col-sm-7 col-lg-7 col-md-7 col-xs-12 form-control-success" name="username" id="username">
         <p>Ime</p>
-        <input type="text" class="col-sm-7 col-lg-7 col-md-7 col-xs-12 form-control" name="fName" id="fName">
+        <input type="text" class="col-sm-7 col-lg-7 col-md-7 col-xs-12 form-control-success" name="fName" id="fName">
         <p>Prezime</p>
-        <input type="text" class="col-sm-7 col-lg-7 col-md-7 col-xs-12 form-control" name="lName" id="lName">
+        <input type="text" class="col-sm-7 col-lg-7 col-md-7 col-xs-12 form-control-success" name="lName" id="lName">
         <p>Email</p>
-        <input type="text" class=" col-sm-7 col-lg-7 col-md-7 col-xs-12 form-control" name="eMail" id="eMail">
+        <input type="text" class=" col-sm-7 col-lg-7 col-md-7 col-xs-12 form-control-success" name="eMail" id="eMail">
         <p>Lozinka</p>
-        <input type="password" class=" col-sm-7 col-lg-7 col-md-7 col-xs-12 form-control" name="passFirst" id="passFirst">
+        <input type="password" class=" col-sm-7 col-lg-7 col-md-7 col-xs-12 form-control-success" name="passFirst" id="passFirst">
         <p>Ponovi lozinku</p>
-        <input type="password" class="col-sm-7 col-lg-7 col-md-7 col-xs-12 form-control" name="passSecond"  id="passSecond">
+        <input type="password" class="col-sm-7 col-lg-7 col-md-7 col-xs-12 form-control-success" name="passSecond"  id="passSecond">
 <input type="button" name="registration" id="registration"  class='btn btn-outline-success'value="Registracija">
         </form>
 <p>Vec imate nalog? <a href="login.php">Ulogujte se</a></p>

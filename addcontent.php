@@ -47,12 +47,12 @@ session_start();
                     <div class=" col-lg-5 col-md-7  d-flex justify-content-around  flex-column align-items-center formLogin">
                         <form>
                             <p>Ime objave</p>
-                            <input type="text" class="col-sm-7 col-lg-7 col-md-7 col-xs-12 form-control" name="username"
+                            <input type="text" class="col-sm-7 col-lg-7 col-md-7 col-xs-12 form-control-success" name="username"
                                 id="username">
                             <p>Prvi pasus</p>
-                            <textarea class="col-sm-10 col-lg-10 col-md-10 col-xs-11 form-control" name="first-desc"></textarea>
+                            <textarea class="col-sm-10 col-lg-10 col-md-10 col-xs-11 form-control-success" name="first-desc"></textarea>
                             <p>Prvi pasus</p>
-                            <textarea class="col-sm-10 col-lg-10 col-md-10 col-xs-12 form-control" name="second-desc"></textarea>
+                            <textarea class="col-sm-10 col-lg-10 col-md-10 col-xs-12 form-control-success" name="second-desc"></textarea>
                             <p class="p-video">Dodaj video</p>
                             <input type="file" name="eMail" class="add-file">
 
@@ -70,12 +70,12 @@ session_start();
                     <div class=" col-lg-5 col-md-7  d-flex justify-content-around  flex-column align-items-center formLogin">
                         <form>
                             <p>Ime recepta</p>
-                            <input type="text" class="col-sm-7 col-lg-7 col-md-7 col-xs-12 form-control" name="username"
+                            <input type="text" class="col-sm-7 col-lg-7 col-md-7 col-xs-12 form-control-success" name="username"
                                 id="username">
                             <p>Opis recepta</p>
-                            <textarea class="col-sm-10 col-lg-10 col-md-10 col-xs-11 form-control" name="first-desc"></textarea>
+                            <textarea class="col-sm-10 col-lg-10 col-md-10 col-xs-11 form-control-success" name="first-desc"></textarea>
                             <p>Sastav jela</p>
-                            <textarea class="col-sm-10 col-lg-10 col-md-10 col-xs-12 form-control" name="second-desc"></textarea>
+                            <textarea class="col-sm-10 col-lg-10 col-md-10 col-xs-12 form-control-success" name="second-desc"></textarea>
                             <input type="button" name="registration" id="registration" class='btn btn-outline-success'
                                 value="Dodaj">
                         </form>
@@ -90,10 +90,10 @@ session_start();
                     <div class=" col-lg-5 col-md-7  d-flex justify-content-around  flex-column align-items-center formLogin">
                         <form>
                             <p>Naslov knjige</p>
-                            <input type="text" class="col-sm-7 col-lg-7 col-md-7 col-xs-12 form-control" name="username"
+                            <input type="text" class="col-sm-7 col-lg-7 col-md-7 col-xs-12 form-control-success" name="username"
                                 id="username">
                             <p>Opis knjige</p>
-                            <textarea class="col-sm-10 col-lg-10 col-md-10 col-xs-11 form-control" name="first-desc"></textarea>
+                            <textarea class="col-sm-10 col-lg-10 col-md-10 col-xs-11 form-control-success" name="first-desc"></textarea>
                             <p class="p-video">Fajl knjige</p>
                             <input type="file" name="eMail" class="add-file col-sm-10 col-lg-10 col-md-10 col-xs-11">
 
@@ -115,7 +115,7 @@ session_start();
                             <span><input type="radio" name="vrsta" checked="true"id="vrsta1"><label for="vrsta1">Objava</label> </span>
                             <span><input type="radio" name="vrsta" id="vrsta2"><label for="vrsta2">Recept</label> </span>
                             <p>Objava</p>
-                            <input type="text" class="col-sm-7 col-lg-7 col-md-7 col-xs-12 form-control" name="username"
+                            <input type="text" class="col-sm-7 col-lg-7 col-md-7 col-xs-12 form-control-success" name="username"
                             id="username">                         
                             <p class="p-video">Dodaj slike</p>
                             <input type="file" name="eMail" class="add-file">

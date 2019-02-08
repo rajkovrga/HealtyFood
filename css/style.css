@@ -250,7 +250,7 @@ button i {
     font-size: 1.14em;
 }
 
-.formLogin form   input[type="text"],input[type="button"]  {
+  input[type="text"],input[type="button"]  {
     margin: 7px 0px !important;
     padding: 4px 3px !important;
     font-size: 0.9em;
@@ -258,14 +258,14 @@ button i {
     background: rgb(255, 255, 255);
 }
 
-.formLogin input[type="text"]:focus {
+ input[type="text"]:focus {
     transition: 0.6s;
     border: none;
     border: 3px solid rgb(19, 73, 11);
     outline: none;
 }
 
-.formLogin textarea:focus {
+ textarea:focus {
     transition: 0.6s;
     border: none;
     border: 3px solid rgb(19, 73, 11);
@@ -273,14 +273,14 @@ button i {
 }
 
 
-.formLogin input[type='button'] {
+ input[type='button'] {
     width: 240px;
     margin-top: 14px !important;
     padding: 10px 0px !important;
     border: none;
+    border: 2px solid rgb(108, 226, 97);
 }
-
-.formLogin input[type='button']:hover {
+ input[type='button']:hover {
     border: 2px solid white;
     transition: 0.6s;
 }
@@ -412,6 +412,58 @@ span label
 {
     margin-right: 20% !important;
 }
+.profile
+{
+    padding: 35px 0px !important;
+    margin-bottom: 30px !important;
+}
+.profile h4
+{
+    border-bottom:2px solid rgb(29, 141, 19);
+    padding:8px 0px !important;
+}
+.profile p
+{
+    padding:5px 0px !important;
+    font-size: 1.24em;
+}
+.profile #desc
+{
+    padding-bottom: 45px !important;
+}
+
+.profile a
+{
+    padding:6px 8px !important;
+    font-size: 1.24em;
+}
+.profile-img
+{
+    border:3px solid rgb(30, 141, 26);
+    width:200px;
+    height: 200px;
+    margin: 30px 0px !important;
+    
+}
+.profile-img img{
+    width:100%;
+    height:100%;
+}
+#mailedit
+{
+    border:2px solid rgb(151, 151, 151);
+}
+#emailedit:focus
+{
+    transition: 0.6s;
+    border: none;
+    border: 3px solid rgb(19, 73, 11);
+    outline: none;
+}
+#changepassword
+{
+    margin-bottom:21px !important;
+}
 @media screen and (max-width:767px) {
     .dropMenu
     {
@@ -472,11 +524,11 @@ span label
 }
 
 @media screen and (max-width:575px) {
-    .formLogin   input[type="text"],input[type="button"]  {
+      input[type="text"],input[type="button"]  {
         margin: 7px 0px !important;
         width: 96%;
     }
-    .formLogin input[type="button"]  {
+     input[type="button"]  {
         margin: 7px 0px !important;
         width: 96%;
     }

@@ -17,7 +17,8 @@ function regexFind(regText,field,textErr) {
     if (regText.test(field.value)) {
         $(field).next().hide();
         return true;
-    } else {
+    }
+    else {
         $(field).next().show();
         $(field).next().text(textErr);
         return false;
