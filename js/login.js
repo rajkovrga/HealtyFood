@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('login').addEventListener('click', function () {
-        let uName = document.getElementById('username');
+        let mail = document.getElementById('mail');
         let password = document.getElementById('password');
         let err = document.getElementById("result");
-        if (password.value.length == 0 || uName.value.length == 0) {
+        if (password.value.length == 0 || mail.value.length == 0) {
             err.textContent = "Popunite sva polja";
         } else  {
             err.textContent = "";
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
             xtr.open('POST', '../LoginAndRegistration/loginUser.php');
             xtr.setRequestHeader('Content-Type', 'application/json');
             let obj = {
-                'username': uName.value,
+                'email': mail.value,
                 'password': password.value
             };
 

@@ -49,7 +49,9 @@
                         echo "<li><a href='" . $i->href . "''>" . $i->nameMenu . "</a></li>";
                     }
                 }
-            } ?>
+            }
+            unset($pdo);
+            ?>
         </ul>
         </li>
         </ul>

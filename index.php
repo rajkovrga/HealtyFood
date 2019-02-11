@@ -85,12 +85,9 @@ session_start();
                 hidratima i belančevinama, a na njihov ukus prvenstveno utiču eterična ulja. Zahvaljujući visokom sadržaju
                 vitamina, minerala, celuloze, a malim količinama masnoće, u prehrani ima neprocenjivu ulogu. Količina
                 vitamina i minerala se razlikuje među vrstama i popdnebljima u kojima to povrće uspeva.</p>
-
         </div>
-
     </div>
 </div>
-
 </body>
 
 </html>

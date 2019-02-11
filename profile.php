@@ -29,7 +29,7 @@ if(!isset($_SESSION['logged_in']))
    <?php require_once __DIR__ . '/menu/showMenu.php'; ?>
     <?php 
     
-    require_once __DIR__ . '/config/config.php';
+    include __DIR__ . '/config/config.php';
     $profileSql = "select * from users where Username = :uname";
     $st = $pdo->prepare($profileSql);
         $rd = $st->execute([
@@ -39,14 +39,22 @@ if(!isset($_SESSION['logged_in']))
 
 
     ?>
-   <h2 class='text-center titlePage '>rajkovrgauser</h2>
-    <div class="profile d-flex flex-justify-center flex-column align-items-center col-lg-8 col-sm-9 col-md-9 col-12 border  border-success rounded">
+    <h2 class='text-center titlePage '><?php echo $pp->Username; ?></h2>
+    <div class="profile d-flex flex-justify-center flex-column align-items-center col-lg-7 col-sm-9 col-md-9 col-12 border  border-success rounded">
 
         <div class="profile-img rounded-circle">
-            <img class="rounded-circle" src="img/user-img.png" alt="">
+            <img class="rounded-circle" src="<?php if($pp->UserImg == "")
+            {
+                echo "img/user-img.png";
+            }
+            else
+            {
+                echo "/profileimages/" . $pp->UserImg;
+            }
+            ?>" alt="">
         </div>
 
-        <div class="user-detalis text-center">
+        <div class="user-detalis text-center col-lg-8 col-sm-10 col-11">
 
             <h4>Ime</h4>
             <p><?php echo $pp->FirstName; ?></p>

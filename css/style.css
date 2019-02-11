@@ -239,30 +239,30 @@ button i {
 }
 
 .formLogin form {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
-}
-
-.formLogin form {
+    width: 100% !important;
+    height: 100% !important;
     font-size: 1.14em;
+
+}
+.formLogin p
+{
+    padding:7px 0px;
 }
 
-  input[type="text"],input[type="button"]  {
-    margin: 7px 0px !important;
+input[type="text"],input[type="button"],input[type="password"]  {
     padding: 4px 3px !important;
     font-size: 0.9em;
-    border: none;
-    background: rgb(255, 255, 255);
-}
+      margin: 0 auto !important;
+      background: rgb(255, 255, 255) !important;
 
- input[type="text"]:focus {
+  }
+
+ input[type="text"]:focus,input[type="password"]:focus {
     transition: 0.6s;
     border: none;
-    border: 3px solid rgb(19, 73, 11);
-    outline: none;
+    border: 3px solid rgb(19, 73, 11) !important;
+border-color: rgba(140, 229, 39, 0.9) !important;
+     outline: none;
 }
 
  textarea:focus {
@@ -281,8 +281,10 @@ button i {
     border: 2px solid rgb(108, 226, 97);
 }
  input[type='button']:hover {
-    border: 2px solid white;
+    border: 3px solid #75ff5d !important;
+     border-color: rgba(38, 25, 19, 0.24) !important;
     transition: 0.6s;
+     color: rgba(0, 0, 0, 0.85);
 }
 
 .formLogin a {
@@ -449,11 +451,11 @@ span label
     width:100%;
     height:100%;
 }
-#mailedit
+.edittxt
 {
-    border:2px solid rgb(151, 151, 151);
+    border:2px solid rgb(151, 151, 151) !important;
 }
-#emailedit:focus
+.edittxt:focus
 {
     transition: 0.6s;
     border: none;
@@ -524,13 +526,13 @@ span label
 }
 
 @media screen and (max-width:575px) {
-      input[type="text"],input[type="button"]  {
-        margin: 7px 0px !important;
-        width: 96%;
+      input[type="text"],input[type="button"],input[type="password"]  {
+        width: 84%;
     }
      input[type="button"]  {
-        margin: 7px 0px !important;
-        width: 96%;
+         margin-bottom: 5px !important;
+        margin-top: 35px !important;
+        width: 65%;
     }
 }
 
