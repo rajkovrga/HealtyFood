@@ -30,16 +30,15 @@ if(!isset($_SESSION['logged_in']))
     <?php 
     
     include __DIR__ . '/config/config.php';
-    $profileSql = "select * from users where Username = :uname";
+    $profileSql = "select * from users where UserId = :id";
     $st = $pdo->prepare($profileSql);
         $rd = $st->execute([
-            ':uname'=>$_SESSION['Username']
+            ':id'=>$_SESSION['UserId']
         ]);
         $pp = $st->fetch();
 
 
     ?>
-    <h2 class='text-center titlePage '><?php echo $pp->Username; ?></h2>
     <div class="profile d-flex flex-justify-center flex-column align-items-center col-lg-7 col-sm-9 col-md-9 col-12 border  border-success rounded">
 
         <div class="profile-img rounded-circle">

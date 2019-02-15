@@ -3,9 +3,9 @@
 $dataRegistration = file_get_contents('php://input');
 
 $obj = json_decode($dataRegistration);
-$passwordReg = '/^(?=.*[\d])(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*])*[\w!@#$%^&*]{8,}$/';
-$firstLastNameReg = '/^([A-Z][a-z]{2,12})[\s]*$/';
-$uNameReg = '/^[a-z0-9_-]{3,15}$/';
+$passwordReg = '/^(?=.*[\d])(?=.*[A-ZČĆŠĐŽ])(?=.*[a-zšđžčć])(?=.*[!@#$%^&*])*[\w!@#$%^&*]{8,}$/';
+$firstLastNameReg = '/^([A-ZČĆŠĐŽ][a-zšđžčć]{2,12})[\s]*$/';
+$uNameReg = '/^[a-zšđžčćA-ZČĆŠĐŽ0-9_-]{3,15}$/';
 if (preg_match($passwordReg, $obj->UserPassword) &&
     filter_var($obj->UserMail, FILTER_VALIDATE_EMAIL) &&
     preg_match($firstLastNameReg, $obj->LastName) &&

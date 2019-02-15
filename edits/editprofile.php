@@ -7,6 +7,9 @@ require_once __DIR__ . '/../config/config.php';
 $username = $obj->username;
 $desc = $obj->desc;
 $src = NULL;
+if(preg_match('/^[A-ZČĆŠĐŽa-z0-9_-]{3,15}$/',$username) && preg_match('/^([A-ZČĆŠĐŽ][a-z0-9A-Z\,\-\/\.\s]{0,490})$/',$desc))
+{
+
 if (isset($_FILES['file'])) {
     $up = "/../profileimages/";
     $imageExtensions = array('jpeg', 'gif', 'jpg', 'png');
@@ -29,7 +32,7 @@ if (isset($_FILES['file'])) {
     }
 }
 
-$sqlUsername = 'SELECT * FROM `users` where  Username = :username where UserId <> :id';
+$sqlUsername = 'SELECT * FROM `users` where  Username = :username and UserId <> :id';
 $usernameQuery = $pdo->prepare($sqlUsername);
 $usernameQuery->execute([':username' => $username, ':id' => $_SESSION['UserId']]);
 if ($usernameQuery->rowCount() == 0) {
@@ -40,9 +43,7 @@ if ($usernameQuery->rowCount() == 0) {
         $select = $pdo->prepare($selectImg);
         $select->execute([":id" => $_SESSION['UserId']]);
         $res = $select->fetch();
-        echo $res->UserImg;
         $src = $res->UserImg;
-        echo $src . "null";
     }
     $editUser = $pdo->prepare($sqlEditUser);
     $editUser->execute([
@@ -53,15 +54,14 @@ if ($usernameQuery->rowCount() == 0) {
     ]);
     if ($editUser) {
         $_SESSION['Username'] = $username;
-//            $objAjax = [
-//                "src" =>
-//            ];
         http_response_code(200);
         header("Location: /../profile.php");
     }
 
 } else {
     echo "Korisnik sa ovim imenom vec postoji";
+
+}
 
 }
 unset($pdo);

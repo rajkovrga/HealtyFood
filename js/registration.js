@@ -9,22 +9,22 @@ document.addEventListener('DOMContentLoaded',function () {
 
     document.getElementById('registration').addEventListener('click',function () {
 
-        let regUsername = /^[a-z0-9_-]{3,15}$/;
+        let regUsername = /^[a-zšđžčćA-ZČĆŠĐŽ0-9_-]{3,15}$/;
         let uName = document.getElementById('username');
         let usernameResult = regexFind(regUsername,uName,"Uneto korisnicko ime je u pogresnom formatu");
 
-        let regFLName = /^([A-Z][a-z]{2,12})[\s]*$/;
+        let regFLName = /^([A-ZČĆŠĐŽ][a-zšđžčć]{2,12})([\s][A-ZČĆŠĐŽ][a-zšđžčć]{2,12}){0,}$/;
         let fName = document.getElementById('fName');
         let lName = document.getElementById('lName');
 
         var fNameResult = regexFind(regFLName,fName,"Prezime nije u odgovarajucem formatu");
         var lNameResult = regexFind(regFLName,lName,"Ime nije u odgovarajucem formatu");
 
-        let regMail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        let regMail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zšđžčćA-ZČĆŠĐŽ\-0-9]+\.)+[a-zšđžčćA-ZČĆŠĐŽ]{2,}))$/;
         let email = document.getElementById('eMail');
         var mailResult = regexFind(regMail,email,"Mejl nije u odgovarajucem formatu");
 
-        let regPass = /^(?=.*[\d])(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*])*[\w!@#$%^&*]{8,}$/;
+        let regPass = /^(?=.*[\d])(?=.*[A-ZČĆŠĐŽ])(?=.*[a-zšđžčć])(?=.*[!@#$%^&*])*[\w!@#$%^&*]{8,}$/;
         let passwordResult = regexFind(regPass,passFirst,"Lozinka nije odgovarajuca");
         let passEquals = equalsFind(passFirst,passSecond);
 
@@ -43,8 +43,8 @@ document.addEventListener('DOMContentLoaded',function () {
             }
             uName.value = "";
             lName.value = "";
-            passFirst.value="";
-            passSecond.value="";
+            passFirst.value= "";
+            passSecond.value= "";
             email.value="";
             fName.value="";
             ht.addEventListener('load',function () {

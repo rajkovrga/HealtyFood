@@ -33,25 +33,21 @@ if (!isset($_SESSION['logged_in'])) {
     <?php
 
     include __DIR__ . '/config/config.php';
-    $profileSql = "select * from users where Username = :uname";
+    $profileSql = "select * from users where UserId = :id";
     $st = $pdo->prepare($profileSql);
     $rd = $st->execute([
-        ':uname' => $_SESSION['Username']
+        ':id' => $_SESSION['UserId']
     ]);
     $pp = $st->fetch();
 
     ?>
 
-    <h2 class='text-center titlePage '><?php echo $pp->Username; ?></h2>
     <div class="profile d-flex flex-justify-center flex-column align-items-center col-lg-8 col-sm-9 col-md-9 col-12 border  border-success rounded">
 
         <div class="profile-img rounded-circle">
-            <img class="rounded-circle" src="<?php if($pp->UserImg == "")
-            {
+            <img class="rounded-circle" src="<?php if ($pp->UserImg == "") {
                 echo "img/user-img.png";
-            }
-            else
-            {
+            } else {
                 echo "/profileimages/" . $pp->UserImg;
             }
             ?>" alt="">
@@ -59,7 +55,7 @@ if (!isset($_SESSION['logged_in'])) {
 
         <div class="user-detalis text-center">
             <h4>Promeni sliku profila</h4>
-            <form enctype="multipart/form-data" >
+            <form enctype="multipart/form-data">
                 <input type="file" id='file' name="file">
                 <h4>Username</h4>
                 <p>
@@ -72,7 +68,7 @@ if (!isset($_SESSION['logged_in'])) {
                 <p><?php echo $pp->LastName; ?></p>
                 <h4>E-mail</h4>
                 <p>
-                       <?php echo $pp->UserMail; ?>
+                    <?php echo $pp->UserMail; ?>
                 </p>
                 <h4 id="changepassword">Lozinka</h4>
                 <a class="text-success border border-success rounded" href="changepassword.php">Promeni lozinku</a>
