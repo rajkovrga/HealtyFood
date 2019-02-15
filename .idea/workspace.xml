@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf561491-03ad-4c10-8813-7ee4d7b4df75" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/addContent/addbook.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addContent/addrecept.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addContent/addreceptimage.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/addcontent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LoginAndRegistration/registrator.php" beforeDir="false" afterPath="$PROJECT_DIR$/LoginAndRegistration/registrator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addcontent.php" beforeDir="false" afterPath="$PROJECT_DIR$/addcontent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanel.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/editprofile.php" beforeDir="false" afterPath="$PROJECT_DIR$/editprofile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edits/editprofile.php" beforeDir="false" afterPath="$PROJECT_DIR$/edits/editprofile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edits/img" beforeDir="false" afterPath="$PROJECT_DIR$/edits/img" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/editprofile.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/editprofile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/functions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/registration.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/registration.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/profile.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,11 +34,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/addcontent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="463">
+            <state relative-caret-position="1303">
               <caret line="146" selection-start-line="146" selection-end-line="146" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -132,6 +127,7 @@
         <option value="$PROJECT_DIR$/addContent/addrecept.php" />
         <option value="$PROJECT_DIR$/addcontent.php" />
         <option value="$PROJECT_DIR$/js/addcontent.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -211,12 +207,12 @@
       <workItem from="1549959791484" duration="836000" />
       <workItem from="1549989239553" duration="4348000" />
       <workItem from="1550098299653" duration="5363000" />
-      <workItem from="1550230005845" duration="23201000" />
+      <workItem from="1550230005845" duration="23496000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="154086000" />
+    <option name="totallyTimeSpent" value="154381000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -503,8 +499,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/addcontent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
+        <state relative-caret-position="1303">
           <caret line="146" selection-start-line="146" selection-end-line="146" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
         </state>
       </provider>
     </entry>
