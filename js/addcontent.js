@@ -6,8 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         let regBookTitle = /^([A-ZČĆŠĐŽ][A-ZČĆŠĐŽ\s\-\,\.\(\)a-zšđžčć]{2,})$/;
         let bookTitle = document.getElementById('titlebook');
-        let bookTitleResult = regexFind(regBookTitle, bookTitle, "Naslov nije u dobrom formatu");
-
+        let bookTitleResult = regexFind(regBookTitle, bookTitle, "Naslov nije u dobrom formatu")
         let regBookDesc = /^[A-ZČĆŠĐŽ][šđžčća-z0-9A-ZČĆŠĐŽ\,\-\/\'\.\s]{5,}$/;
 
         let bookDesc = document.getElementById('descbook');
@@ -18,8 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let fileResult = regexFile(regFile, fileBook, 0, "Fajl nije u dobrom formatu");
         let size = 0;
 
-        if(fileBook.size > 21715200)
-        {
+        if (fileBook.size > 21715200) {
             size = 1;
             alert("FAJL JE PREVELIK")
         }
@@ -146,6 +144,5 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    
 
 });

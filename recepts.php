@@ -24,7 +24,7 @@ showHead("Recepti");
 
     include __DIR__ . '/config/config.php';
 
-        $sqlRecepts = "SELECT * FROM recepts r INNER JOIN imagerecept ir ON r.ReceptId = ir.ReceptId 
+        $sqlRecepts = "SELECT r.ReceptId as IdRecept,SrcImage,ReceptTitle FROM recepts r INNER JOIN imagerecept ir ON r.ReceptId = ir.ReceptId 
       inner join images i on ir.ImageID = i.ImageID GROUP BY ir.ReceptId 
       order by ReceptDate desc LIMIT :startnumber ,:endnumber ";
 
@@ -44,7 +44,7 @@ showHead("Recepti");
             <div class=\"d-flex  flex-column align-items-center justify-content-between border rounded  recept border-success col-sm-5 col-9\">
                 <div class=\" recept-img bg-success\"><img src="."receptimages/".$r['SrcImage']." alt=" . $r['ReceptTitle'] . "></div>
                 <h3 class='recepts-title'>". $r['ReceptTitle'] ."</h3>
-                <a href=\"#\" class=\"border border-sucess\">Pogledaj</a>
+                <a href='recept.php?ID=".$r['IdRecept']."' class=\"border border-sucess\">Pogledaj</a>
             </div>
             ";
 

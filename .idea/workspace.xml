@@ -1,54 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="8" />
+    <option name="CUSTOM_SCOPE_NAME" value="All Places" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="bf561491-03ad-4c10-8813-7ee4d7b4df75" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/js/pagination.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/paginationbook.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/menu/head.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/showContents/countBooks.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/showContents/countRecepts.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/showContents/showBooks.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/showContents/showRecepts.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recept.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addContent/addbook.php" beforeDir="false" afterPath="$PROJECT_DIR$/addContent/addbook.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addContent/addrecept.php" beforeDir="false" afterPath="$PROJECT_DIR$/addContent/addrecept.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addContent/addreceptimage.php" beforeDir="false" afterPath="$PROJECT_DIR$/addContent/addreceptimage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addcontent.php" beforeDir="false" afterPath="$PROJECT_DIR$/addcontent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books.php" beforeDir="false" afterPath="$PROJECT_DIR$/books.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/booksfiles/LdN2wAm4M86eLhJ.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/editprofile.php" beforeDir="false" afterPath="$PROJECT_DIR$/editprofile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/healty.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/8oNgWx9Uby1v7Rr.Array" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/q7s58JvMCluyL7o.Array" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/addcontent.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/addcontent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/functions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/profile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/receptimages/2kL7jm50Ni3wC8C.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/receptimages/A80g6WikfCe4887.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/receptimages/ANJfs5zo3rS3Ji0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/receptimages/Aiu4U987A8y3tgd.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/receptimages/C2t48JliWaSJ9YN.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/receptimages/CFNeA8J6s5NcgTm.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/receptimages/CnA28J9Co51E74u.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/receptimages/Ja5L4YNLAjdCk92.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/receptimages/L53NyTa0kN9coA5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/receptimages/LjchLb2u5KFmkzJ.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/receptimages/RLtw7oCL820kW82.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/receptimages/RnAScU8rptiTuQa.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/receptimages/SjQ3g2S2q5LNhAU.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/receptimages/U89suF2cAljY4ye.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/receptimages/USvREx2n9A58b23.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/receptimages/UzL8hLeQ3TS2sJY.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/receptimages/WS09l589gq5F89Y.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/receptimages/b9F3hfk89ioq6dW.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/receptimages/bL9NN9AcE5Fgfo4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/receptimages/gS44Cnkxb2AjNtu.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/receptimages/xEfRMNc7bL8dgTS.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/recepts.php" beforeDir="false" afterPath="$PROJECT_DIR$/recepts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/registration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/showContents/showRecepts.php" beforeDir="false" afterPath="$PROJECT_DIR$/showContents/showRecepts.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,26 +26,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/recepts.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="73" column="25" selection-start-line="73" selection-start-column="25" selection-end-line="73" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/editprofile.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+            <state relative-caret-position="289">
+              <caret line="46" column="24" lean-forward="true" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="58" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/showContents/showRecepts.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="24" column="58" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/recept.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="589">
+              <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/addcontent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="27" column="70" selection-start-line="27" selection-start-column="70" selection-end-line="27" selection-end-column="70" />
+            <state relative-caret-position="260">
+              <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -92,52 +63,7 @@
         <entry file="file://$PROJECT_DIR$/js/paginationbook.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="100">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/registration.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="35" column="33" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addcontent.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-380">
-              <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addContent/addbook.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="18" column="44" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/menu/head.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -217,7 +143,6 @@
         <option value="$PROJECT_DIR$/addContent/addrecept.php" />
         <option value="$PROJECT_DIR$/js/pagination.js" />
         <option value="$PROJECT_DIR$/showContents/countRecepts.php" />
-        <option value="$PROJECT_DIR$/showContents/showRecepts.php" />
         <option value="$PROJECT_DIR$/js/paginationbooks.js" />
         <option value="$PROJECT_DIR$/js/pagg.js" />
         <option value="$PROJECT_DIR$/showContents/countBooks.php" />
@@ -228,7 +153,6 @@
         <option value="$PROJECT_DIR$/menu/head.php" />
         <option value="$PROJECT_DIR$/profile.php" />
         <option value="$PROJECT_DIR$/login.php" />
-        <option value="$PROJECT_DIR$/recepts.php" />
         <option value="$PROJECT_DIR$/registration.php" />
         <option value="$PROJECT_DIR$/addcontent.php" />
         <option value="$PROJECT_DIR$/editprofile.php" />
@@ -237,6 +161,9 @@
         <option value="$PROJECT_DIR$/books.php" />
         <option value="$PROJECT_DIR$/addContent/addbook.php" />
         <option value="$PROJECT_DIR$/js/addcontent.js" />
+        <option value="$PROJECT_DIR$/recepts.php" />
+        <option value="$PROJECT_DIR$/recept.php" />
+        <option value="$PROJECT_DIR$/showContents/showRecepts.php" />
       </list>
     </option>
   </component>
@@ -246,7 +173,7 @@
       <path value="$PROJECT_DIR$/vendor/phpmailer/phpmailer" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="656" />
@@ -258,7 +185,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -266,35 +192,11 @@
               <item name="New Healty Life Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="New Healty Life Project" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="New Healty Life Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="New Healty Life Project" type="462c0819:PsiDirectoryNode" />
-              <item name="addContent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="New Healty Life Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="New Healty Life Project" type="462c0819:PsiDirectoryNode" />
-              <item name="booksfiles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="New Healty Life Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="New Healty Life Project" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="New Healty Life Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="New Healty Life Project" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="New Healty Life Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="New Healty Life Project" type="462c0819:PsiDirectoryNode" />
-              <item name="menu" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -303,6 +205,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunDashboard">
@@ -347,21 +250,22 @@
       <workItem from="1551391995460" duration="12319000" />
       <workItem from="1551486777693" duration="8893000" />
       <workItem from="1551529080260" duration="19525000" />
+      <workItem from="1551568314690" duration="3974000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="218074000" />
+    <option name="totallyTimeSpent" value="222048000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24357034" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2473525" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection Results" weight="0.33060557" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49924356" visible="true" weight="0.08346972" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49924356" weight="0.08346972" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -403,9 +307,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/img/apple.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/logout.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -546,9 +447,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/showContent/showRecepts.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/showContent/showRecepts.php" />
     <entry file="file://$PROJECT_DIR$/js/login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -563,13 +462,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/paginationbooks.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/js/paginationbooks.js" />
     <entry file="file://$PROJECT_DIR$/showContents/countRecepts.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -581,13 +474,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1023">
           <caret line="115" column="24" selection-start-line="115" selection-start-column="24" selection-end-line="115" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/showContents/showRecepts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="4" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -626,18 +512,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/menu/head.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/healty.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-240" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/healty.php" />
     <entry file="file://$PROJECT_DIR$/editprofile.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1120">
@@ -652,27 +527,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/editprofile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addcontent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-380">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/books.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="309">
@@ -680,38 +534,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/recepts.php">
+    <entry file="file://$PROJECT_DIR$/js/editprofile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="73" column="25" selection-start-line="73" selection-start-column="25" selection-end-line="73" selection-end-column="25" />
+        <state relative-caret-position="520">
+          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/registration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="35" column="33" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addcontent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/addContent/addbook.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
+        <state relative-caret-position="360">
           <caret line="18" column="44" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/menu/head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/addcontent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recept.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/paginationbook.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/registration.php">
+    <entry file="file://$PROJECT_DIR$/recepts.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="35" column="33" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
+        <state relative-caret-position="289">
+          <caret line="46" column="24" lean-forward="true" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/addcontent.js">
+    <entry file="file://$PROJECT_DIR$/showContents/showRecepts.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="27" column="70" selection-start-line="27" selection-start-column="70" selection-end-line="27" selection-end-column="70" />
+        <state relative-caret-position="240">
+          <caret line="24" column="58" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
         </state>
       </provider>
     </entry>
