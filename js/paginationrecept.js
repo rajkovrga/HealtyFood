@@ -17,9 +17,7 @@ xt.addEventListener("load",function () {
              xr.open('POST','../showContents/showRecepts.php');
 
              xr.addEventListener("load",function () {
-
                 document.getElementsByClassName("recepts")[0].innerHTML = xr.responseText;
-
              });
              let obj = {
                  "start" : start,

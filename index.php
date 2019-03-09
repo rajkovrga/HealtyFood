@@ -5,13 +5,13 @@ session_start();
 
 ?>
 
-<?php require_once __DIR__ . '/menu/head.php';
+<?php require_once __DIR__ . '/components/head.php';
 showHead("Zdrava ishrana");
 ?>
 <body>
 <div class="container-fluid cFluid">
 
-   <?php require_once __DIR__ . '/menu/showMenu.php'; ?>
+   <?php require_once __DIR__ . '/components/showMenu.php'; ?>
 
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="4000" data-pause="false">
         <ol class="carousel-indicators carouselPointers ">
@@ -75,6 +75,7 @@ showHead("Zdrava ishrana");
                 vitamina i minerala se razlikuje među vrstama i popdnebljima u kojima to povrće uspeva.</p>
         </div>
     </div>
+    <?php require_once __DIR__ . '/components/footer.php';?>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

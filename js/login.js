@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
         let mail = document.getElementById('mail');
         let password = document.getElementById('password');
         let err = document.getElementById("result");
-        if (password.value.length == 0 || mail.value.length == 0) {
+        if (password.value.length === 0 || mail.value.length === 0) {
             err.textContent = "Popunite sva polja";
         } else  {
             err.textContent = "";
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
             xtr.addEventListener('load',function () {
                 if(xtr.status == 330)
                 {
-                    err.textContent = "Korisnik ne postoji";
+                    err.textContent = "Korisnik ne postoji ili je nalog neaktivan";
                 }
                 else if(xtr.status == 200)
                 {

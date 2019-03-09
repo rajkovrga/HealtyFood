@@ -3,16 +3,18 @@
 <?php
 session_start();
 
-
+if (!(isset($_SESSION['logged_in']) && ( $_SESSION["StatusUser"] == "Admin" || $_SESSION["StatusUser"] == "Moderator"))) {
+    Header("Location: login.php");
+}
 ?>
-<?php require_once __DIR__ . '/menu/head.php';
+<?php require_once __DIR__ . '/components/head.php';
 showHead("Dodaj sadržaj");
 ?>
 <body>
 <div class="container-fluid cFluid">
-    <?php require_once __DIR__ . '/menu/showMenu.php'; ?>
+    <?php require_once __DIR__ . '/components/showMenu.php'; ?>
 
-    <section id="add-content" class="col-md-12">
+    <div id="add-content" class="col-md-12">
         <nav class=" row nav col-12 nav-pills d-flex flex-row justify-content-center" id="nav-buttons" id="pills-tab"
              role="tablist">
 
@@ -47,9 +49,12 @@ showHead("Dodaj sadržaj");
                             <textarea class="col-sm-10 col-lg-10 col-md-10 col-xs-12 form-control-success"
                                       name="recept-elements" id="recept-elements"></textarea>
                             <p class="p-files">Dodaj slike recepta *</p>
-                            <input type="file" multiple name="recept-images" id="recept-images"
-                                   class="add-file col-sm-10 col-lg-10 col-md-10 col-xs-11">
+                            <div class="custom-file col-lg-8 col-11">
+                            <input type="file"  multiple name="recept-images" id="recept-images"
+                                   class="add-file custom-file-input col-sm-10 col-lg-10 col-md-10 col-xs-11">
+                            <label class="custom-file-label" for="recept-images">Choose file</label>
 
+                    </div>
                             <input type="button" name="addrecept" id="addrecept" class='btn btn-outline-success'
                                    value="Dodaj">
                             <p class="addresult"></p>
@@ -74,11 +79,15 @@ showHead("Dodaj sadržaj");
                             <textarea id="descbook" class="col-sm-10 col-lg-10 col-md-10 col-xs-11 form-control-success"
                                       name="first-desc"></textarea>
                             <p class="p-files">Fajl knjige *</p>
+                            <div class="custom-file col-8">
                             <input type="file" name="bookfile" id="bookfile"
-                                   class="add-file col-sm-10 col-lg-10 col-md-10 col-xs-11">
+                                   class="add-file custom-file-input col-sm-10 col-lg-10 col-md-10 col-xs-11">
+                                <label class="custom-file-label" for="bookfile">Choose file</label>
 
+                            </div>
                             <input type="button" name="addbook" id="addbook" class='btn btn-outline-success'
                                    value="Dodaj">
+
                             <p class="addresult"></p>
 
                         </form>
@@ -89,7 +98,8 @@ showHead("Dodaj sadržaj");
             </div>
 
         </div>
-    </section>
+    </div>
+    <?php require_once __DIR__ . '/components/footer.php';?>
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

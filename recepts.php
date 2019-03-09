@@ -9,14 +9,14 @@ if(!isset($_SESSION['logged_in']))
 }
 ?>
 
-<?php require_once __DIR__ . '/menu/head.php';
+<?php require_once __DIR__ . '/components/head.php';
 showHead("Recepti");
 ?>
 
 <body>
     <div class="container-fluid cFluid d-flex flex-wrap justify-content-center flex-column align-items-center">
 
-        <?php require_once __DIR__ . '/menu/showMenu.php'; ?>
+        <?php require_once __DIR__ . '/components/showMenu.php'; ?>
 
         <h2 class='text-center titlePage'>Recepti</h2>
         <div class="recepts col-12 col-lg-8 col-md-10 d-flex flex-wrap justify-content-around">
@@ -42,7 +42,7 @@ showHead("Recepti");
 
             $recepts .= "
             <div class=\"d-flex  flex-column align-items-center justify-content-between border rounded  recept border-success col-sm-5 col-9\">
-                <div class=\" recept-img bg-success\"><img src="."receptimages/".$r['SrcImage']." alt=" . $r['ReceptTitle'] . "></div>
+                <div class=\" recept-img\"><img src="."receptimages/".$r['SrcImage']." alt=" . $r['ReceptTitle'] . "></div>
                 <h3 class='recepts-title'>". $r['ReceptTitle'] ."</h3>
                 <a href='recept.php?ID=".$r['IdRecept']."' class=\"border border-sucess\">Pogledaj</a>
             </div>
@@ -64,7 +64,7 @@ showHead("Recepti");
                 <li id="right"><a href="#">&raquo;</a></li>
             </ul>
         </div>
-    
+        <?php require_once __DIR__ . '/components/footer.php';?>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
             crossorigin="anonymous"></script>

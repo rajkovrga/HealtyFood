@@ -76,7 +76,6 @@ function paginationChange(nowPage, numPages,pageElements) {
     {
         $("#right").hide();
         $("#left").hide();
-        console.log("TU SAM");
     }
     else {
         if (nowPage === 1) {
@@ -85,7 +84,13 @@ function paginationChange(nowPage, numPages,pageElements) {
         } else if (nowPage >= numPages) {
             $("#right").hide();
             $("#left").show();
-        } else {
+        }
+        else if(pageElements >= numPages)
+        {
+            $("#right").hide();
+            $("#left").hide();
+        }
+        else {
             $("#right").show();
             $("#left").show();
         }
@@ -110,7 +115,7 @@ function showPaginationPages(nowPage, numPages,pageElements) {
             <li ><a class="pag-item"  href='#'>${nowPage + 1}</a></li>`;
         }
         if (nowPage >= numPages) {
-            list = `  <li><a class="pag-item"  href='#'>${nowPage - 1}</a></li>
+            list = `  <li><a class="pag-item"   href='#'>${nowPage - 1}</a></li>
             <li data-start="${start}" data-end="${pageElements * (nowPage)}"><a class="pag-item active-paggination"  href='#'>${nowPage}</a></li>`;
         }
         if(numPages <= 1)
@@ -120,6 +125,7 @@ function showPaginationPages(nowPage, numPages,pageElements) {
 
     }
     items.innerHTML = list;
+
 }
 
 function pagination(numPages,pageElements) {
@@ -130,6 +136,7 @@ function pagination(numPages,pageElements) {
         paginationChange(nowPage, numPages,pageElements)
     });
 
+    $(".pag-item")
     $("#left").click(function () {
         nowPage--;
         paginationChange(nowPage, numPages,pageElements)

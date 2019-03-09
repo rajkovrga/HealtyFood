@@ -11,7 +11,7 @@
         require_once __DIR__ . '/../config/config.php';
         $sql = "select MenuItemName as nameMenu,MenuItemHref as href,MenuPositionName as position,StatusName as status 
                 from menu as m inner join menuposition as mp on m.MenuPositionId = mp.MenuPositionId 
-                inner join statuses s on s.StatusId = m.StatusId";
+                inner join statuses s on s.StatusId = m.StatusId order by Priority";
         $menu = $pdo->prepare($sql);
         $menu->execute();
         $item = $menu->fetchAll();
@@ -30,25 +30,27 @@
                 }
             }
             if (isset($_SESSION['logged_in'])) {
+                $res = "";
                 echo "<li class='nav-link user'>
                <label data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>Vise <i class='btn dropdown-toggle'>
                     </i> </label>
                 <ul class='dropMenu dropdown-menu dropdown-menu-right'>  ";
                 foreach ($item as $i) {
                     if ($_SESSION['StatusUser'] == "Admin" && $i->position == "DropDownMenu" && $i->status == "Admin") {
-                        echo "<li><a href='" . $i->href . "''>" . $i->nameMenu . "</a></li>";
+                        $res .= "<li><a href='" . $i->href . "''>" . $i->nameMenu . "</a></li>";
                     }
                 }
                 foreach ($item as $i) {
                     if ($_SESSION['StatusUser'] == "Moderator" && $i->position == "DropDownMenu" && $i->status == "Moderator") {
-                        echo "<li><a href='" . $i->href . "''>" . $i->nameMenu . "</a></li>";
+                        $res .= "<li><a href='" . $i->href . "''>" . $i->nameMenu . "</a></li>";
                     }
                 }
                 foreach ($item as $i) {
                     if ($i->position == "DropDownMenu" && $i->status == "Korisnik") {
-                        echo "<li><a href='" . $i->href . "''>" . $i->nameMenu . "</a></li>";
+                        $res .= "<li><a href='" . $i->href . "''>" . $i->nameMenu . "</a></li>";
                     }
                 }
+                echo $res;
             }
             unset($pdo);
             ?>

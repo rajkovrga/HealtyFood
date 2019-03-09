@@ -9,13 +9,13 @@ if (isset($_SESSION['logged_in'])) {
 
 }
 ?>
-<?php require_once __DIR__ . '/menu/head.php';
+<?php require_once __DIR__ . '/components/head.php';
 showHead("Logovanje");
 ?>
 
 <body>
 <div class="container-fluid cFluid">
-    <?php require_once __DIR__ . '/menu/showMenu.php'; ?>
+    <?php require_once __DIR__ . '/components/showMenu.php'; ?>
     <h2 class='text-center titlePage '>Logovanje</h2>
     <div class="row">
 
@@ -35,6 +35,7 @@ showHead("Logovanje");
 
     </div>
 </div>
+    <?php require_once __DIR__ . '/components/footer.php';?>
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

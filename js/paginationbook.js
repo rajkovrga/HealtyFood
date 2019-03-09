@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let item = document.querySelector("#pagination-div");
         let sumItems = xt.responseText;
         let pageCount = 4;
-        let totalPages = Math.ceil(sumItems / pageCount);
+        let totalPages = Math.floor(sumItems / pageCount);
         item.addEventListener("click", function () {
             let start = document.querySelector(".active-paggination").parentElement.getAttribute("data-start")
             let end = document.querySelector(".active-paggination").parentElement.getAttribute("data-end")

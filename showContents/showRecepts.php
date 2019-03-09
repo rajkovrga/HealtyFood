@@ -20,7 +20,7 @@ try
 
         $recepts .= "
             <div class=\"d-flex  flex-column align-items-center justify-content-between border rounded  recept border-success col-sm-5 col-9\">
-                <div class=\" recept-img bg-success\"><img src="."receptimages/".$r['SrcImage']." alt=" . $r['ReceptTitle'] . "></div>
+                <div class=\" recept-img \"><img src="."receptimages/".$r['SrcImage']." alt=" . $r['ReceptTitle'] . "></div>
                 <h3 class='recepts-title'>". $r['ReceptTitle'] ."</h3>
                 <a href='recept.php?ID=".$r['IdRecept']."' class=\"border border-sucess\">Pogledaj</a>
             </div>
