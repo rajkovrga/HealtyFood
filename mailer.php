@@ -3,8 +3,9 @@
 <?php
 session_start();
 
-if (!(isset($_SESSION['logged_in']) && $_SESSION["StatusUser"] == "Admin") ) {
-    Header("Location: index.php");
+session_start();
+if (!(isset($_SESSION['logged_in']) && ( $_SESSION["StatusUser"] == "Admin"))) {
+    Header("Location: login.php");
 }
 
  require_once __DIR__ . '/components/head.php';

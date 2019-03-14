@@ -19,40 +19,22 @@ showHead("Recepti");
         <?php require_once __DIR__ . '/components/showMenu.php'; ?>
 
         <h2 class='text-center titlePage'>Recepti</h2>
+        <div class="search col-12 d-flex justify-content-center">
+        <div class="col-11 col-md-10 col-lg-8 d-flex justify-content-center">
+            <form class="card card-sm  col-11">
+                <div class="card-body row no-gutters align-items-center">
+
+                    <div class="col">
+                        <input class="form-control form-control-lg form-control-borderless search-box" type="search" placeholder="Pretraži recept..">
+                    </div>
+                    <div class="col-auto">
+                        <button class="btn btn-lg btn-success search-button" type="submit">Pretraži</button>
+                    </div>
+                </div>
+            </form>
+        </div></div>
         <div class="recepts col-12 col-lg-8 col-md-10 d-flex flex-wrap justify-content-around">
-    <?php
 
-    include __DIR__ . '/config/config.php';
-
-        $sqlRecepts = "SELECT r.ReceptId as IdRecept,SrcImage,ReceptTitle FROM recepts r INNER JOIN imagerecept ir ON r.ReceptId = ir.ReceptId 
-      inner join images i on ir.ImageID = i.ImageID GROUP BY ir.ReceptId 
-      order by ReceptDate desc LIMIT :startnumber ,:endnumber ";
-
-        $start = 0;
-        $end = 6;
-
-        $firstRecepts = $pdo->prepare($sqlRecepts);
-    $firstRecepts->bindParam(':startnumber', $start, PDO::PARAM_INT);
-    $firstRecepts->bindParam(':endnumber', $end, PDO::PARAM_INT);
-        $firstRecepts->execute();
-        $result = $firstRecepts->fetchAll(PDO::FETCH_ASSOC);
-        $recepts = "";
-        foreach ($result as $r)
-        {
-
-            $recepts .= "
-            <div class=\"d-flex  flex-column align-items-center justify-content-between border rounded  recept border-success col-sm-5 col-9\">
-                <div class=\" recept-img\"><img src="."receptimages/".$r['SrcImage']." alt=" . $r['ReceptTitle'] . "></div>
-                <h3 class='recepts-title'>". $r['ReceptTitle'] ."</h3>
-                <a href='recept.php?ID=".$r['IdRecept']."' class=\"border border-sucess\">Pogledaj</a>
-            </div>
-            ";
-
-        }
-
-    echo $recepts;
-
-    ?>
         </div>
         
     

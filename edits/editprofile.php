@@ -9,7 +9,7 @@ require_once __DIR__ . '/../config/config.php';
 $username = $obj->username;
 $desc = $obj->desc;
 $src = NULL;
-if (preg_match('/^[A-ZČĆŠĐŽa-z0-9_-]{3,15}$/', $username) && preg_match('/^([A-ZČĆŠĐŽ][a-z0-9A-Z\,\-\/\.\s]{0,490})$/', $desc)) {
+if (preg_match("/^[A-ZČĆŠĐŽa-zšđžčć0-9\_\-]{3,15}$/", $username) && preg_match("/^([A-ZČĆŠĐŽ][a-zšđžčć0-9A-ZČĆŠĐŽ,\-\'.\s]{0,490})$/", $desc)) {
 
     if (isset($_FILES['file'])) {
         $up = "/../profileimages/";
@@ -23,7 +23,6 @@ if (preg_match('/^[A-ZČĆŠĐŽa-z0-9_-]{3,15}$/', $username) && preg_match('/^
                 $src = $fileNameEnd . $_SESSION['UserId'] . '.' . $r[count($r) - 1];
                 $pathFile = $up . $src;
                 $path = __DIR__ . $pathFile;
-
                 $res = move_uploaded_file($_FILES['file']['tmp_name'], $path);
             } else {
                 echo "Fajl je prevelik";
@@ -34,6 +33,7 @@ if (preg_match('/^[A-ZČĆŠĐŽa-z0-9_-]{3,15}$/', $username) && preg_match('/^
     }
 
     $sqlUsername = 'SELECT * FROM `users` where  Username = :username and UserId <> :id';
+
     $usernameQuery = $pdo->prepare($sqlUsername);
     $usernameQuery->execute([':username' => $username, ':id' => $_SESSION['UserId']]);
     if ($usernameQuery->rowCount() == 0) {
@@ -61,10 +61,11 @@ if (preg_match('/^[A-ZČĆŠĐŽa-z0-9_-]{3,15}$/', $username) && preg_match('/^
 
     } else {
         echo "Korisnik sa ovim imenom vec postoji";
-
     }
-
+} else {
+    http_response_code(344);
 }
+
 unset($pdo);
 
 

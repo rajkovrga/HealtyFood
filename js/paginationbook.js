@@ -10,24 +10,29 @@ document.addEventListener("DOMContentLoaded", function () {
         let pageCount = 4;
         let totalPages = Math.floor(sumItems / pageCount);
         item.addEventListener("click", function () {
-            let start = document.querySelector(".active-paggination").parentElement.getAttribute("data-start")
-            let end = document.querySelector(".active-paggination").parentElement.getAttribute("data-end")
-
-            let xr = new XMLHttpRequest();
-            xr.open('POST', '../showContents/showBooks.php');
-
-            xr.addEventListener("load", function () {
-
-                document.getElementById("books").innerHTML = xr.responseText;
-
-            });
-            let obj = {
-                "start": start,
-                "end": end
-            };
-            xr.send(JSON.stringify(obj));
+            showBooks()
         });
         pagination(totalPages, 4);
+        showBooks()
     });
     xt.send();
+
+    function  showBooks() {
+        let start = document.querySelector(".active-paggination").parentElement.getAttribute("data-start")
+        let end = document.querySelector(".active-paggination").parentElement.getAttribute("data-end")
+
+        let xr = new XMLHttpRequest();
+        xr.open('POST', '../showContents/showBooks.php');
+
+        xr.addEventListener("load", function () {
+
+            document.getElementById("books").innerHTML = xr.responseText;
+
+        });
+        let obj = {
+            "start": start,
+            "end": end
+        };
+        xr.send(JSON.stringify(obj));
+    }
 });

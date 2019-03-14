@@ -35,16 +35,22 @@
                <label data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>Vise <i class='btn dropdown-toggle'>
                     </i> </label>
                 <ul class='dropMenu dropdown-menu dropdown-menu-right'>  ";
+            if($_SESSION['StatusUser'] == "Admin") {
                 foreach ($item as $i) {
-                    if ($_SESSION['StatusUser'] == "Admin" && $i->position == "DropDownMenu" && $i->status == "Admin") {
+                    if ($_SESSION['StatusUser'] == "Admin" && $_SESSION['StatusUser'] != "Moderator" && $i->position == "DropDownMenu" && $i->status == "Admin") {
                         $res .= "<li><a href='" . $i->href . "''>" . $i->nameMenu . "</a></li>";
                     }
                 }
-                foreach ($item as $i) {
-                    if ($_SESSION['StatusUser'] == "Moderator" && $i->position == "DropDownMenu" && $i->status == "Moderator") {
-                        $res .= "<li><a href='" . $i->href . "''>" . $i->nameMenu . "</a></li>";
+            }
+                if($_SESSION['StatusUser'] == "Moderator" && $_SESSION['StatusUser'] == "Admin")
+                {
+                    foreach ($item as $i) {
+                        if ($_SESSION['StatusUser'] == "Moderator" && $i->position == "DropDownMenu" && $i->status == "Moderator") {
+                            $res .= "<li><a href='" . $i->href . "''>" . $i->nameMenu . "</a></li>";
+                        }
                     }
                 }
+
                 foreach ($item as $i) {
                     if ($i->position == "DropDownMenu" && $i->status == "Korisnik") {
                         $res .= "<li><a href='" . $i->href . "''>" . $i->nameMenu . "</a></li>";

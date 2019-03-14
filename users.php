@@ -3,7 +3,7 @@
 <?php
 
 session_start();
-if (!isset($_SESSION['logged_in'])) {
+if (!(isset($_SESSION['logged_in']) && ($_SESSION["StatusUser"] == "Admin"))) {
     Header("Location: login.php");
 }
 ?>
@@ -14,7 +14,7 @@ showHead("Korisnici");
 
 
 <body>
-<div class="container-fluid cFluid d-flex flex-wrap justify-content-center flex-column align-items-center">
+<div class="container-fluid cFluid d-flex flex-wrap align-items-center flex-column justify-content-center">
 
     <?php require_once __DIR__ . '/components/showMenu.php'; ?>
 
@@ -25,7 +25,6 @@ showHead("Korisnici");
     $queryUsers = $pdo->prepare($sqlUsers);
     $queryUsers->execute();
     $resultUsers = $queryUsers->fetchAll();
-
     $sqlStatuses = "SELECT * FROM `statuses`";
     $queryStatuses = $pdo->prepare($sqlStatuses);
     $queryStatuses->execute();
@@ -95,17 +94,13 @@ showHead("Korisnici");
                 <span class="usersall d-flex justify-content-between ">
 
                 <p><?php echo $r->Username; ?></p>
-                <div class="tools <?php
-
-                echo "color-danger";
-
-                ?>"><i data-id="<?php echo $r->UserId; ?>" data-toggle="modal" data-target="#myModal"
-                       class="fa fa-user"></i>
-
+                <div class="tools <?php echo ($r->StatusName == "Neaktivan") ? "text-danger" : ""; ?>"><i
+                            data-id="<?php echo $r->UserId; ?>"
+                            class="fa fa-user modal-user"></i>
+                    <i data-id="<?php echo $r->UserId; ?>"
+                       class="fa fa-trash deleteBtn"></i>
             </div>
-
 </span>
-
             <?php endforeach; ?>
 
 
@@ -115,29 +110,19 @@ showHead("Korisnici");
     </div>
 
     <?php require_once __DIR__ . '/components/footer.php'; ?>
-    <div class="modal center" id="myModal">
-        <div class="modal-dialog modal-dialog-centered ">
-            <div class="modal-content">
 
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <h4 class="modal-title">Modal Heading</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
+</div>
+<div class="my-modal col-12 align-items-center justify-content-center">
 
-                <!-- Modal body -->
-                <div class="modal-body">
-                    Modal body..
-                </div>
-
-                <!-- Modal footer -->
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                </div>
-
-            </div>
+    <div class=" rounded d-flex justify-content-center align-items-center flex-column col-lg-4 col-sm-6 col-sm-8 col-10 my-modal-content">
+        <div class="my-modal-close">
+            <i class="fa fa-window-close" id="my-modal-close"></i>
         </div>
+        <div class="d-flex flex-column align-items-center justify-content-start col-12 text-response">
+        </div>
+
     </div>
+
 </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -148,7 +133,8 @@ showHead("Korisnici");
         crossorigin="anonymous"></script>
 <script src="js/functions.js"></script>
 <script src="js/changestatus.js"></script>
-
+<script src="js/deleteuser.js"></script>
+<script src="js/modal.js"></script>
 
 </body>
 

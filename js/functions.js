@@ -130,6 +130,7 @@ function showPaginationPages(nowPage, numPages,pageElements) {
 
 function pagination(numPages,pageElements) {
     let nowPage = 1;
+
     paginationChange(nowPage, numPages,pageElements)
     $("#right").click(function () {
         nowPage++;

@@ -24,7 +24,10 @@ document.addEventListener('DOMContentLoaded', function () {
             {
                 if(xr.status == 200)
                 {
-                 window.location.assign("http://localhost:5501/profile.php")
+            window.location.assign("http://localhost:5501/profile.php")
+                }
+                else {
+                    alert("Došlo je do greške")
                 }
 
             })

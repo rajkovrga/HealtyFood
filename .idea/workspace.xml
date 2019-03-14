@@ -6,56 +6,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf561491-03ad-4c10-8813-7ee4d7b4df75" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/SendMail/answermail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addContent/send.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addContent/updateimages.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/answer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/footer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contact.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/editbook.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/editrecept.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edits/changestatus.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edits/deletebook.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edits/deleteimg.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edits/deleterecept.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edits/deleteuser.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edits/editbook.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edits/editrecept.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/answer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/changestatus.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/contact.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/delete.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/deleteimages.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/deleteuser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/editbook.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/editrecept.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mailer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sitemap.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addContent/getUser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/modal.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LoginAndRegistration/loginUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/LoginAndRegistration/loginUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addcontent.php" beforeDir="false" afterPath="$PROJECT_DIR$/addcontent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addimage.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/books.php" beforeDir="false" afterPath="$PROJECT_DIR$/books.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/head.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/showMenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/showMenu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/editprofile.php" beforeDir="false" afterPath="$PROJECT_DIR$/editprofile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edits/deleteuser.php" beforeDir="false" afterPath="$PROJECT_DIR$/edits/deleteuser.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/edits/editprofile.php" beforeDir="false" afterPath="$PROJECT_DIR$/edits/editprofile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edits/files.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/deleteuser.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/deleteuser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/editprofile.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/editprofile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/functions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/pagination.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/js/paginationbook.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/paginationbook.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/paginationrecept.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/paginationrecept.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/head.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/showMenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/showMenu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/profile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recept.php" beforeDir="false" afterPath="$PROJECT_DIR$/recept.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mailer.php" beforeDir="false" afterPath="$PROJECT_DIR$/mailer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profileimages/0a596M8i7NRp9LQ46.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profileimages/7zs3YA28mFq8CL746.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profileimages/89fMiCn3p88Am1j46.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profileimages/8p30s928leyE4Cr46.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profileimages/Lv3m8u0SJC2pqnd46.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profileimages/Q4a0iAN8cJ913h646.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/recepts.php" beforeDir="false" afterPath="$PROJECT_DIR$/recepts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/registration.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/showContents/showRecepts.php" beforeDir="false" afterPath="$PROJECT_DIR$/showContents/showRecepts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/users.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,49 +47,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/users.php">
+        <entry file="file://$PROJECT_DIR$/showContents/showRecepts.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-540">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-              <folding>
-                <element signature="e#4115#4122#1#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="140">
+              <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/deleteuser.js">
+        <entry file="file://$PROJECT_DIR$/recept.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="21" column="41" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="21" selection-end-column="41" />
+            <state relative-caret-position="1780">
+              <caret line="89" selection-start-line="89" selection-end-line="89" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LoginAndRegistration/loginUser.php">
+        <entry file="file://$PROJECT_DIR$/recepts.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="28" column="1" selection-start-line="28" selection-end-line="28" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/edits/deleteuser.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/editbook.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="43">
-              <caret line="44" column="14" lean-forward="true" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
+            <state relative-caret-position="500">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
             </state>
           </provider>
         </entry>
@@ -119,8 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="789" column="1" lean-forward="true" selection-start-line="789" selection-start-column="1" selection-end-line="789" selection-end-column="1" />
+            <state relative-caret-position="17440">
+              <caret line="872" column="1" selection-start-line="872" selection-start-column="1" selection-end-line="872" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -136,11 +93,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>det</find>
-      <find>$recF</find>
-      <find>#result</find>
-      <find>publTitle</find>
-      <find>recept-img</find>
       <find>10</find>
       <find>book</find>
       <find>dropMenu</find>
@@ -166,6 +118,11 @@
       <find>[type=&quot;button</find>
       <find>answer</find>
       <find>answer-button</find>
+      <find>display:block</find>
+      <find>modal</find>
+      <find>my-modal-content</find>
+      <find>unlink(</find>
+      <find>unlink</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -174,16 +131,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/menu/head.php" />
-        <option value="$PROJECT_DIR$/addContent/addbook.php" />
-        <option value="$PROJECT_DIR$/js/addcontent.js" />
-        <option value="$PROJECT_DIR$/showContents/showRecepts.php" />
-        <option value="$PROJECT_DIR$/menu/footer.php" />
-        <option value="$PROJECT_DIR$/addContent/deleterecept.php" />
-        <option value="$PROJECT_DIR$/edits/deleterecept.php" />
-        <option value="$PROJECT_DIR$/js/paginationrecept.js" />
-        <option value="$PROJECT_DIR$/js/paginationbook.js" />
-        <option value="$PROJECT_DIR$/js/functions.js" />
         <option value="$PROJECT_DIR$/js/deleteimages.php" />
         <option value="$PROJECT_DIR$/addContent/addreceptimage.php" />
         <option value="$PROJECT_DIR$/js/editrecept.js" />
@@ -195,10 +142,8 @@
         <option value="$PROJECT_DIR$/js/delete.js" />
         <option value="$PROJECT_DIR$/edits/deletebook.php" />
         <option value="$PROJECT_DIR$/registration.php" />
-        <option value="$PROJECT_DIR$/recepts.php" />
         <option value="$PROJECT_DIR$/recept.php" />
         <option value="$PROJECT_DIR$/profile.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/editprofile.php" />
         <option value="$PROJECT_DIR$/editbook.php" />
         <option value="$PROJECT_DIR$/books.php" />
@@ -207,24 +152,36 @@
         <option value="$PROJECT_DIR$/contact.php" />
         <option value="$PROJECT_DIR$/js/editbook.js" />
         <option value="$PROJECT_DIR$/addcontent.php" />
-        <option value="$PROJECT_DIR$/components/showMenu.php" />
         <option value="$PROJECT_DIR$/addContent/send.php" />
         <option value="$PROJECT_DIR$/editrecept.php" />
         <option value="$PROJECT_DIR$/js/contact.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/mailer.php" />
         <option value="$PROJECT_DIR$/answer.php" />
         <option value="$PROJECT_DIR$/SendMail/answermail.php" />
         <option value="$PROJECT_DIR$/js/answer.js" />
-        <option value="$PROJECT_DIR$/js/deleteuser.js" />
-        <option value="$PROJECT_DIR$/LoginAndRegistration/loginUser.php" />
         <option value="$PROJECT_DIR$/js/login.js" />
-        <option value="$PROJECT_DIR$/edits/deleteuser.php" />
         <option value="$PROJECT_DIR$/edits/changestatus.php" />
-        <option value="$PROJECT_DIR$/edits/editprofile.php" />
         <option value="$PROJECT_DIR$/js/changestatus.js" />
-        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/LoginAndRegistration/loginUser.php" />
+        <option value="$PROJECT_DIR$/css/bootstrap.min.css" />
+        <option value="$PROJECT_DIR$/components/head.php" />
+        <option value="$PROJECT_DIR$/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/js/modal.js" />
+        <option value="$PROJECT_DIR$/addContent/getUser.php" />
+        <option value="$PROJECT_DIR$/js/deleteuser.js" />
+        <option value="$PROJECT_DIR$/js/functions.js" />
+        <option value="$PROJECT_DIR$/js/paginationbook.js" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/components/showMenu.php" />
+        <option value="$PROJECT_DIR$/mailer.php" />
+        <option value="$PROJECT_DIR$/js/editprofile.js" />
+        <option value="$PROJECT_DIR$/edits/editprofile.php" />
         <option value="$PROJECT_DIR$/users.php" />
+        <option value="$PROJECT_DIR$/edits/deleteuser.php" />
+        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/showContents/showRecepts.php" />
+        <option value="$PROJECT_DIR$/recepts.php" />
+        <option value="$PROJECT_DIR$/js/paginationrecept.js" />
       </list>
     </option>
   </component>
@@ -234,7 +191,7 @@
       <path value="$PROJECT_DIR$/vendor/phpmailer/phpmailer" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="y" value="8" />
     <option name="width" value="697" />
@@ -246,7 +203,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -257,22 +213,13 @@
             <path>
               <item name="New Healty Life Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="New Healty Life Project" type="462c0819:PsiDirectoryNode" />
-              <item name="edits" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="New Healty Life Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="New Healty Life Project" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="New Healty Life Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="New Healty Life Project" type="462c0819:PsiDirectoryNode" />
-              <item name="LoginAndRegistration" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -335,22 +282,25 @@
       <workItem from="1551568314690" duration="3974000" />
       <workItem from="1551632077588" duration="11870000" />
       <workItem from="1551742418713" duration="38301000" />
-      <workItem from="1551974466007" duration="48430000" />
+      <workItem from="1551974466007" duration="48479000" />
+      <workItem from="1552216074643" duration="1373000" />
+      <workItem from="1552484803851" duration="44893000" />
+      <workItem from="1552574328542" duration="1461000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="320649000" />
+    <option name="totallyTimeSpent" value="368425000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.17776097" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24659607" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49924356" visible="true" weight="0.08346972" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49924356" weight="0.08346972" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -368,7 +318,7 @@
       <window_info anchor="right" id="Database" order="3" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17776097" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24281392" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -394,153 +344,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/functions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="13" column="32" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addContent/addrecept.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-260">
-          <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addContent/addreceptimage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="38" column="33" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/editprofile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="27" lean-forward="true" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addContent/updateimages.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="652">
-          <caret line="79" column="36" selection-start-line="79" selection-start-column="36" selection-end-line="79" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edits/files.php" />
-    <entry file="file://$PROJECT_DIR$/edits/deleteimg.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/deleteimages.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="59" column="39" selection-start-line="59" selection-start-column="39" selection-end-line="59" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edits/editrecept.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/editrecept.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="29" column="50" lean-forward="true" selection-start-line="29" selection-start-column="50" selection-end-line="29" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edits/editbook.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
-          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/addcontent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="54" column="7" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="54" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addContent/addbook.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="36" column="25" selection-end-line="60" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edits/deleterecept.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edits/deletebook.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recepts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="66" column="49" selection-start-line="66" selection-start-column="49" selection-end-line="66" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/profile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logout.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/books.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-891">
-          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/head.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editbook.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="40" column="45" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -548,31 +351,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/contact.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="15" column="33" selection-start-line="15" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addcontent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" selection-start-line="2" selection-end-line="11" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/showMenu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -594,13 +376,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="6" column="34" lean-forward="true" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/editprofile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -649,38 +424,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/recept.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/delete.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mailer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-140">
-          <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="64" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/deleteuser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="41" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="21" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -691,13 +438,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/edits/editprofile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/changestatus.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -705,41 +445,232 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LoginAndRegistration/loginUser.php">
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="28" column="1" selection-start-line="28" selection-end-line="28" selection-end-column="1" />
+        <state relative-caret-position="142">
+          <caret line="5" column="66418" selection-start-line="5" selection-start-column="66413" selection-end-line="5" selection-end-column="66418" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/edits/deleteuser.php">
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="260">
+          <caret line="5440" column="16" lean-forward="true" selection-start-line="5440" selection-start-column="16" selection-end-line="5440" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
+    <entry file="file://$PROJECT_DIR$/components/head.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="789" column="1" lean-forward="true" selection-start-line="789" selection-start-column="1" selection-end-line="789" selection-end-column="1" />
+        <state relative-caret-position="160">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="66" lean-forward="true" selection-start-line="7" selection-start-column="66" selection-end-line="7" selection-end-column="66" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/editbook.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43">
-          <caret line="44" column="14" lean-forward="true" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
+        <state relative-caret-position="29">
+          <caret line="44" column="14" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/modal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addContent/addrecept.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-340">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2">
+          <caret line="31" column="48" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addContent/addreceptimage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edits/deleteimg.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="18" column="24" selection-start-line="18" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LoginAndRegistration/loginUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profileimages/7zs3YA28mFq8CL746.jpg" />
+    <entry file="file://$PROJECT_DIR$/profileimages/Q4a0iAN8cJ913h646.jpg" />
+    <entry file="file://$PROJECT_DIR$/profileimages/Lv3m8u0SJC2pqnd46.jpg" />
+    <entry file="file://$PROJECT_DIR$/profileimages/0a596M8i7NRp9LQ46.jpg" />
+    <entry file="file://$PROJECT_DIR$/js/deleteuser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="63" selection-start-line="5" selection-start-column="63" selection-end-line="5" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addcontent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/pagination.js" />
+    <entry file="file://$PROJECT_DIR$/components/showMenu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11">
+          <caret line="44" column="86" selection-start-line="44" selection-start-column="86" selection-end-line="44" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edits/editprofile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="63" column="5" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-931">
+          <caret line="3" column="13" selection-start-line="3" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mailer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/editprofile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/editprofile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/users.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-540">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="e#4115#4122#1#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="280">
+          <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addContent/getUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="28" column="48" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edits/deleteuser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/addcontent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recept.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1780">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recepts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17440">
+          <caret line="872" column="1" selection-start-line="872" selection-start-column="1" selection-end-line="872" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="10741" column="4" selection-start-line="10741" selection-start-column="4" selection-end-line="10741" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/paginationrecept.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="689">
+          <caret line="45" column="14" lean-forward="true" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/paginationbook.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="36" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="135" column="18" selection-start-line="135" selection-start-column="18" selection-end-line="135" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/showContents/showRecepts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
         </state>
       </provider>
     </entry>

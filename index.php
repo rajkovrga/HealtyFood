@@ -2,12 +2,12 @@
 <html lang="en">
 <?php
 session_start();
-
-?>
-
-<?php require_once __DIR__ . '/components/head.php';
+ require_once __DIR__ . '/components/head.php';
 showHead("Zdrava ishrana");
 ?>
+
+
+
 <body>
 <div class="container-fluid cFluid">
 

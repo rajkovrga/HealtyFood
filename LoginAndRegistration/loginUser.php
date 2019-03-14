@@ -4,12 +4,13 @@ require_once __DIR__ . '/../config/config.php';
 $dataRegistration = file_get_contents('php://input');
 $obj = json_decode($dataRegistration);
 echo $obj->email;
-$sql = "SELECT UserImg,Username,UserMail,s.StatusName as status,UserId,UserPassword from users as u inner join statuses as s on u.StatusId = s.StatusId where UserMail = :mail and StatusName <> `Neaktivan` ";
+$sql = "SELECT UserImg,Username,UserMail,s.StatusName as status,UserId,UserPassword from users as u inner join statuses as s on u.StatusId = s.StatusId where UserMail = :mail and StatusName <> :name" ;
 
 $st = $pdo->prepare($sql);
 
 $ex = $st->execute([
-    ':mail' => $obj->email
+    ':mail' => $obj->email,
+    ":name" => "Neaktivan"
 ]);
 $user = $st->fetch();
 
