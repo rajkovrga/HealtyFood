@@ -36,15 +36,23 @@ if (preg_match("/^[A-ZČĆŠĐŽa-zšđžčć0-9\_\-]{3,15}$/", $username) && pr
 
     $usernameQuery = $pdo->prepare($sqlUsername);
     $usernameQuery->execute([':username' => $username, ':id' => $_SESSION['UserId']]);
+
+
+
     if ($usernameQuery->rowCount() == 0) {
         $sqlEditUser = "UPDATE `users` SET `Username` = :uname, `UserDesc` = :description, `UserImg` = :src
                 WHERE `UserId` = :userid";
+        $selectImg = "SELECT * from `users` where UserId = :id";
+        $select = $pdo->prepare($selectImg);
+        $select->execute([":id" => $_SESSION['UserId']]);
+        $res = $select->fetch();
         if ($src === NULL) {
-            $selectImg = "SELECT * from `users` where UserId = :id";
-            $select = $pdo->prepare($selectImg);
-            $select->execute([":id" => $_SESSION['UserId']]);
-            $res = $select->fetch();
+
             $src = $res->UserImg;
+        }
+        else
+        {
+            unlink(__DIR__."/../profileimages/".$res->UserImg);
         }
         $editUser = $pdo->prepare($sqlEditUser);
         $editUser->execute([

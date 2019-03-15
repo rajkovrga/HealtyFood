@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 r = 1;
             }
 
-
             function debounce(time, fn) {
                 let interval = null;
                 return e => {
@@ -29,24 +28,30 @@ document.addEventListener("DOMContentLoaded", function () {
 
             let search = debounce(1100, function (e) {
                 if (r === 1) {
+                    console.log(returnObj.result)
+
                     showRecept();
                     r = 0;
                 }
+
                 e.preventDefault();
             });
-            document.getElementsByClassName("search-box")[0].addEventListener("input", function () {
-                if(this.value.length === 0)
-                {
-                    if (r === 1) {
-                        showRecept();
-                        r = 0;
-                    }
-                    e.preventDefault();
-                }
-            })
 
-            document.getElementsByClassName("search-box")[0].addEventListener("keypress", search)
+            document.getElementsByClassName("search-box")[0].addEventListener("input", search)
             document.getElementsByClassName("recepts")[0].innerHTML = returnObj.result;
+            if(returnObj.result === "")
+            {
+                console.log(returnObj.countItems)
+                document.getElementsByClassName("recepts")[0].innerHTML += `
+                            <div class="col-12 no-result text-center d-flex flex-column
+                            justify-content-center align-items-center">
+                            <i class="fa fa-ban no-result-icon" aria-hidden="true"></i>
+
+                            <p id="no-result-text">Nema rezultata</p></div>
+
+                            `;
+            }
+            itemListener()
 
         });
         let obj = {
@@ -56,13 +61,17 @@ document.addEventListener("DOMContentLoaded", function () {
         };
         xr.send(JSON.stringify(obj));
     }
+    itemListener()
+    function itemListener()
+    {
+        let item = document.querySelector("#pagination-div");
+        item.addEventListener("click", function (e) {
+            let starte = document.querySelector(".active-paggination").parentElement.getAttribute("data-start")
+            let ende = document.querySelector(".active-paggination").parentElement.getAttribute("data-end")
+            showRecept(starte, ende);
+            e.preventDefault();
+        })
+    }
 
-    let item = document.querySelector("#pagination-div");
-    item.addEventListener("click", function (e) {
-        let starte = document.querySelector(".active-paggination").parentElement.getAttribute("data-start")
-        let ende = document.querySelector(".active-paggination").parentElement.getAttribute("data-end")
-        showRecept(starte, ende);
-        e.preventDefault();
-    })
 
 })

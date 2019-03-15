@@ -23,11 +23,8 @@ showHead("Izmeni profil");
         ':id' => $_SESSION['UserId']
     ]);
     $pp = $st->fetch();
-
     ?>
-
     <div class="profile d-flex flex-justify-center flex-column align-items-center col-lg-8 col-sm-9 col-md-9 col-12 border  border-success rounded">
-
         <div class="profile-img rounded-circle">
             <img class="rounded-circle" src="<?php if ($pp->UserImg == "") {
                 echo "img/user-img.png";
@@ -41,6 +38,10 @@ showHead("Izmeni profil");
             <h4>Promeni sliku profila</h4>
             <form enctype="multipart/form-data">
                 <input type="file" id='file' name="file">
+
+                <h4  id="changepassword">Obriši sliku profila</h4>
+                <a id="deleteprofileimg" href="#" class="text-success border border-success rounded">Obriši profilnu</a>
+
                 <h4>Username</h4>
                 <p>
                     <input type="text" id="useredit" class="form-control-success edittxt" name="uname"
@@ -54,20 +55,42 @@ showHead("Izmeni profil");
                 <p>
                     <?php echo $pp->UserMail; ?>
                 </p>
-                <h4 id="changepassword">Lozinka</h4>
-                <a class="text-success border border-success rounded" href="changepassword.php">Promeni lozinku</a>
                 <h4>Opis</h4>
                 <p id="desc"><textarea name="desc" class="form-control-success" id="desc-val"><?php if ($pp->UserDesc) {
                             echo $pp->UserDesc;
                         } else {
                             echo "Nije unet";
                         }
-
                         ?></textarea></p>
-
                 <input class='btn btn-outline-success ' type="button" id="save" value="Sacuvaj">
+                <div class="padding"></div>
+                <h4 id="changepassword">Lozinka</h4>
+
+                <div id="changepassword-box" class="password-change d-none flex-column justify-content-center">
+                    <h4 class="pass-change" >Stara lozinka</h4>
+                    <input type="password"  class="form-control-success edittxt" name="oldpassword" id="oldpassword"
+                         >
+                    <h4 class="pass-change" >Stara lozinka</h4>
+
+                    <input type="password"  class="form-control-success edittxt" name="newpassword" id="newpassword"
+                         >
+                    <h4 class="pass-change" >Stara lozinka</h4>
+
+                    <input type="password" class="form-control-success edittxt"name="confirmpassword" id="confirmpassword">
+
+                </div>
+                    <p id="pass-result"></p>
+                <div class="padding"></div>
+
+                <a id="password-button" class="text-success border border-success rounded" href="#">Promeni lozinku</a>
+                <div class="padding"></div>
+                <div class="padding"></div>
+                <h4  id="changepassword">Obriši profil</h4>
+                <a href="#" class="text-success border border-success rounded" data-id="<?php echo $_SESSION["UserId"]; ?>" href="#" id="deleteprofile">Obriši profil</a>
+
             </form>
-        </div>
+               </div>
+
 
     </div>
     <?php require_once __DIR__ . '/components/footer.php';?>

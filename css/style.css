@@ -871,6 +871,43 @@ padding-bottom: 20px !important;
     border-bottom: 2px solid rgba(0, 128, 0, 0.73);
 
 }
+.no-result
+{
+    color: #04a718;
+}
+.no-result-icon
+{
+    font-size:3.5em !important;
+    padding: 20px 0px !important;
+}
+#no-result-text
+{
+    font-size:2.0em !important;
+}
+
+.password-change
+{
+    margin-top:-15px !important;
+
+    padding-bottom:14px !important;
+}
+
+.pass-change
+{
+    border:none !important;
+    padding-bottom: 3px !important;
+    font-size: 1.2em;
+}
+.padding
+{
+    padding:10px 0px !important;
+}
+#pass-result
+{
+    color: #00ab00 !important;
+    text-align: center !important;
+}
+
 @media screen and (max-width: 767px) {
     .dropMenu {
         background: rgba(53, 185, 53, 0.253) !important;

@@ -35,13 +35,18 @@ try {
 
             }
         }
+        include __DIR__ . '/../config/config.php';
+        $sqlOldLink = "SELECT * FROM books where BookId = :id";
+        $oldQuery = $pdo->prepare($sqlOldLink);
+        $oldQuery->execute([":id" => $obj->id]);
+        $oldResult = $oldQuery->fetch();
             if ($book === false) {
-                include __DIR__ . '/../config/config.php';
-                $sqlOldLink = "SELECT * FROM books where BookId = :id";
-                $oldQuery = $pdo->prepare($sqlOldLink);
-                $oldQuery->execute([":id" => $obj->id]);
-                $oldResult = $oldQuery->fetch();
                 $src = $oldResult->BookLink;
+            }
+            else
+            {
+                unlink(__DIR__."/../booksfiles/". $oldResult->BookLink);
+
             }
                 $sqlAddBook = "UPDATE `books` SET `BookLink`= :link,`BookTitle`= :title,`BookDescription`= :description WHERE BookId = :id";
                 $addBook = $pdo->prepare($sqlAddBook);

@@ -6,6 +6,22 @@ if (isset($_GET["ID"])) {
         if ($_SESSION["StatusUser"] == "Admin" || $_SESSION["StatusUser"] == "Moderator") {
 
             $id = $_GET["ID"];
+
+            $unlinkImagesSQL = "SELECT * FROM imagerecept ir inner join images i 
+            on ir.ImageId = i.ImageId where ReceptId = :id";
+            $unlinkQuery = $pdo->prepare($unlinkImagesSQL);
+            $unlinkQuery->execute([":id" => $id]);
+            $unlinkQueryResult = $unlinkQuery->fetchAll();
+
+            foreach($unlinkQueryResult as $i)
+            {
+
+                unlink(__DIR__."/../receptimages/".$i->SrcImage);
+
+
+            }
+       
+
             $delete = "DELETE FROM imagerecept where ReceptId = :id";
 
             $deleteimages = $pdo->prepare($delete);
