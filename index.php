@@ -45,19 +45,18 @@ showHead("Zdrava ishrana");
 
         <div class=" box">
             <h3>Voce</h3>
-            <img src="img/fruit.jpg" alt="">
-            <p> <b>Voće</b> je bogat izvor vitamina, mada ih, u poređenju sa povrćem,sadrži manje. Od vitamina voće sadrži
+            <img src="img/fruit.jpg" alt="Voće">
+            <p> Voće je bogat izvor vitamina, mada ih, u poređenju sa povrćem,sadrži manje. Od vitamina voće sadrži
                 najviše vitamina C i karotina. Njihova količina zavisi od vrste voća, sorte kao i niza drugih činilaca.
                 Vitamin C nije podjednako raspoređen u cijelom plodu. Najviše ga ima u ljusci i ispod nje. Drugi vitamin po
-                važnosti i količini je karotin. Najviše ga sadrže: kajsija, ananas, suva šljiva, breskva itd. U manjim
-                količinama voće sadrži i druge vitamine: К, Е, vitamine B grupe</p>
+                važnosti i količini je karotin. Najviše ga sadrže: kajsija, ananas, suva šljiva, breskva itd.</p>
 
         </div>
         <div class=" box">
             <h3>Zitarice</h3>
-            <img src="img/zitarice.png" alt="">
+            <img src="img/zitarice.jpg" alt="Žitarice">
             <p>
-                <b> Žitarice</b> su jednogodišnje biljke iz porodice trava (Gramineae), čiji zrnasti plodovi (žita) služe za
+                Žitarice su jednogodišnje biljke iz porodice trava (Gramineae), čiji zrnasti plodovi (žita) služe za
                 ishranu ljudi i životinja i kao sirovina u prehrambenoj industriji. Nazivaju se i hlebna žita ili cerealije.
                 Ona su vrsta trave koja se uzgaja iz jestivog zrna koje se zove caryopsis, a u sebi sadrži klice i mekinje.
                 Žitarice u zrnu uzgajaju se u većim količinama i pružaju više energije od bilo koje druge vrste useva. One su
@@ -65,16 +64,27 @@ showHead("Zdrava ishrana");
         </div>
         <div class=" box">
             <h3>Povrce</h3>
-            <img src="img/vegetables.jpg" alt="">
+            <img src="img/vegetables.jpg" class="bg-index" alt="Povrće">
             <p>
-                <b> Povrće</b> na pijaci
+                Povrće na pijaci
                 Povrće je zajednički naziv za kultivisane biljke ili njihove delove koje se koriste za ljudsku ishranu. Za
                 jelo se priprema na različite načine. Upotrebljava se i kao sveže i kao konzervisano. Bogato je ugljenim
                 hidratima i belančevinama, a na njihov ukus prvenstveno utiču eterična ulja. Zahvaljujući visokom sadržaju
-                vitamina, minerala, celuloze, a malim količinama masnoće, u prehrani ima neprocenjivu ulogu. Količina
-                vitamina i minerala se razlikuje među vrstama i popdnebljima u kojima to povrće uspeva.</p>
+                vitamina, minerala, celuloze, a malim količinama masnoće, u prehrani ima neprocenjivu ulogu.</p>
         </div>
     </div>
+    <div class="text-center bottom-content position-relative row col-12 d-flex justify-content-center align-items-center flex-column">
+        <h3>Šta raditi sa ovim namirnicama?</h3>
+        <div class="col-12 bottom-img"> <img src="img/bg-index.jpg" alt=""></div>
+
+        <p class="position-absolute top-10">Ulogujte se i pronadjite brojne recepte, vaše zdravlje dovedite na maksimu.</p>
+    </div>
+
+    <div class="row col-12 d-flex justify-content-center align-items-center flex-column">
+        <h3>Anketa</h3>
+        <div class="col-lg-5"></div>
+    </div>
+
     <?php require_once __DIR__ . '/components/footer.php';?>
 </div>
 

@@ -21,14 +21,14 @@ showHead("Recepti");
         <h2 class='text-center titlePage'>Recepti</h2>
         <div class="search col-12 d-flex justify-content-center">
         <div class="col-11 col-md-10 col-lg-8 d-flex justify-content-center">
-            <form class="card card-sm  col-11">
-                <div class="card-body row no-gutters align-items-center">
+            <form class=" card-sm  col-11">
+                <div class="card-body row no-gutters align-items-center searchra">
 
                     <div class="col">
                         <input class="form-control form-control-lg form-control-borderless search-box" type="search" placeholder="Pretraži recept..">
                     </div>
-                    <div class="col-auto">
-                        <button class="btn btn-lg btn-success search-button" type="submit">Pretraži</button>
+                    <div class="col-auto search-box-button">
+                        <i class="fa fa-search" aria-hidden="true"></i>
                     </div>
                 </div>
             </form>

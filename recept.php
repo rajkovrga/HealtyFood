@@ -89,12 +89,6 @@ showHead("Recept");
             </div>
 
         </div>
-        <div class="detalis col-12 col-lg-8 col-md-10  d-flex flex-wrap align-items-center justify-content-center">
-            <div class="text col-12 col-lg-12 col-md-12 d-flex justify-content-between">
-                <p><b>Objavio: </b> <?php echo $info->Username; ?></p>
-                <p><b>Datum recepta:</b> <?php echo $info->ReceptDate; ?></p></div>
-
-        </div>
         <div class="small-photos delete col-11   d-flex justify-content-space flex-wrap">
 
             <?php
@@ -117,6 +111,12 @@ showHead("Recept");
 
             ?>
 
+
+        </div>
+        <div class="detalis col-12 col-lg-8 col-md-10  d-flex flex-wrap align-items-center justify-content-center">
+            <div class="text col-12 col-lg-12 col-md-12 d-flex justify-content-between">
+                <p><b>Objavio: </b> <?php echo $info->Username; ?></p>
+                <p><b>Datum recepta:</b> <?php echo $info->ReceptDate; ?></p></div>
 
         </div>
 

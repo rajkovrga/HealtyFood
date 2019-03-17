@@ -3,7 +3,6 @@
 <?php
 session_start();
 
-session_start();
 if (!(isset($_SESSION['logged_in']) && ( $_SESSION["StatusUser"] == "Admin"))) {
     Header("Location: login.php");
 }
@@ -23,12 +22,13 @@ $result = $messages->fetchAll();
 
     <?php require_once __DIR__ . '/components/showMenu.php'; ?>
     <h2 class='text-center titlePage'>Sanduče</h2>
+    <div id="sanduceslika" class="d-flex justify-content-center"><img src="img/mailbox.png" class="col-1" alt="sanduce" ></div>
     
     <div class="col-12 d-flex   flex-column align-items-center justify-content-center" id="messages">
 
         <?php foreach ($result as $r): ?>
 
-            <div class=" bg-success col-11 col-sm-8  col-lg-6 border border-circle">
+            <div class=" bf-color-replace col-11 col-sm-8  col-lg-6 border border-circle">
                 <h3 class="text-center" ><?php echo $r->MailTitle; ?></h3>
                 <p class="text-center"> <?php echo $r->MailDesc; ?></p>
                 <div class="div-button  col-12 d-flex justify-content-center"><a href="answer.php?ID=<?php echo $r->MailId; ?>"  id="answer">Odgovori</a></div>
@@ -38,7 +38,7 @@ $result = $messages->fetchAll();
 
     <?php if ($messages->rowCount() === 0): ?>
 
-        <div class=" bg-success col-11  col-lg-7 border border-circle">
+        <div class=" bf-color-replace col-11  col-lg-7 border border-circle">
 
             <p class="text-center">Trenutno nema novih poruka</p>
         </div>

@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-
+    let item = document.querySelector("#pagination-div");
     let start = 0;
     let end = 6;
     let r = 0;
@@ -16,20 +16,16 @@ document.addEventListener("DOMContentLoaded", function () {
                 pagination(Math.ceil(returnObj.countItems / 6), 6);
                 r = 1;
             }
-
             function debounce(time, fn) {
                 let interval = null;
                 return e => {
                     clearTimeout(interval);
-
                     interval = setTimeout(() => fn(e), time);
                 };
             }
 
             let search = debounce(1100, function (e) {
                 if (r === 1) {
-                    console.log(returnObj.result)
-
                     showRecept();
                     r = 0;
                 }
@@ -39,9 +35,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
             document.getElementsByClassName("search-box")[0].addEventListener("input", search)
             document.getElementsByClassName("recepts")[0].innerHTML = returnObj.result;
+
             if(returnObj.result === "")
             {
-                console.log(returnObj.countItems)
                 document.getElementsByClassName("recepts")[0].innerHTML += `
                             <div class="col-12 no-result text-center d-flex flex-column
                             justify-content-center align-items-center">
@@ -51,7 +47,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
                             `;
             }
+
             itemListener()
+
 
         });
         let obj = {
@@ -64,12 +62,13 @@ document.addEventListener("DOMContentLoaded", function () {
     itemListener()
     function itemListener()
     {
-        let item = document.querySelector("#pagination-div");
+
         item.addEventListener("click", function (e) {
             let starte = document.querySelector(".active-paggination").parentElement.getAttribute("data-start")
             let ende = document.querySelector(".active-paggination").parentElement.getAttribute("data-end")
             showRecept(starte, ende);
             e.preventDefault();
+            e.stopImmediatePropagation();
         })
     }
 

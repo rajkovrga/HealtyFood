@@ -67,59 +67,49 @@ function emptyFiles(field, textErr) {
 }
 
 
-
-
-
-
-function paginationChange(nowPage, numPages,pageElements) {
-    if(numPages <= 1)
-    {
+function paginationChange(nowPage, numPages, pageElements) {
+    if (numPages <= 1) {
         $("#right").hide();
         $("#left").hide();
-    }
-    else {
+    } else {
         if (nowPage === 1) {
             $("#left").hide();
             $("#right").show();
         } else if (nowPage >= numPages) {
             $("#right").hide();
             $("#left").show();
-        }
-        else if(pageElements >= numPages)
-        {
+        } else if (pageElements >= numPages) {
             $("#right").hide();
             $("#left").hide();
-        }
-        else {
+        } else {
             $("#right").show();
             $("#left").show();
         }
     }
 
-    showPaginationPages(nowPage, numPages,pageElements);
+    showPaginationPages(nowPage, numPages, pageElements);
 }
 
-function showPaginationPages(nowPage, numPages,pageElements) {
+function showPaginationPages(nowPage, numPages, pageElements) {
     let list = "";
     let items = document.getElementById("pagination-items");
-    let start = pageElements * (nowPage-1);
+    let start = pageElements * (nowPage - 1);
 
     for (let i = 0; i < 3; i++) {
         if (nowPage !== 1) {
-            list = `<li data-item="${nowPage - 1}"><a class="pag-item"  href='#'>${nowPage - 1}</a></li>
-            <li data-start="${pageElements * (nowPage-1)}" data-end="${pageElements * (nowPage)}""><a  class="pag-item active-paggination" href='#'>${nowPage}</a></li>
-            <li><a class="pag-item"  href='#'>${nowPage + 1}</a></li>`;
+            list = `<li  data-item="${nowPage - 1}"><a class="pag-item"  data-now="${nowPage - 1}"  href='#'>${nowPage - 1}</a></li>
+            <li data-start="${pageElements * (nowPage - 1)}" data-end="${pageElements * (nowPage)}""><a  data-now="${nowPage}" class="pag-item active-paggination" href='#'>${nowPage}</a></li>
+            <li><a class="pag-item" data-now="${nowPage + 1}" href='#'>${nowPage + 1}</a></li>`;
         }
         if (nowPage === 1) {
-            list = `  <li data-start="${start}" data-end="${pageElements * (nowPage)}"><a class="pag-item active-paggination" href='#'>${nowPage}</a></li>
-            <li ><a class="pag-item"  href='#'>${nowPage + 1}</a></li>`;
+            list = `  <li data-start="${start}" data-end="${pageElements * (nowPage)}"><a data-now="${nowPage}"class="pag-item active-paggination" href='#'>${nowPage}</a></li>
+            <li ><a class="pag-item"  data-now="${nowPage + 1}" href='#'>${nowPage + 1}</a></li>`;
         }
         if (nowPage >= numPages) {
-            list = `  <li><a class="pag-item"   href='#'>${nowPage - 1}</a></li>
-            <li data-start="${start}" data-end="${pageElements * (nowPage)}"><a class="pag-item active-paggination"  href='#'>${nowPage}</a></li>`;
+            list = `  <li><a class="pag-item"  data-now="${nowPage - 1}" href='#'>${nowPage - 1}</a></li>
+            <li data-start="${start}" data-end="${pageElements * (nowPage)}"><a data-now="${nowPage}" class="pag-item active-paggination"  href='#'>${nowPage}</a></li>`;
         }
-        if(numPages <= 1)
-        {
+        if (numPages <= 1) {
             list = ``;
         }
 
@@ -128,18 +118,27 @@ function showPaginationPages(nowPage, numPages,pageElements) {
 
 }
 
-function pagination(numPages,pageElements) {
+function pagination(numPages, pageElements) {
     let nowPage = 1;
 
-    paginationChange(nowPage, numPages,pageElements)
+    paginationChange(nowPage, numPages, pageElements)
     $("#right").click(function () {
         nowPage++;
-        paginationChange(nowPage, numPages,pageElements)
+        paginationChange(nowPage, numPages, pageElements)
+        cellClick()
     });
-
-    $(".pag-item")
+    cellClick()
     $("#left").click(function () {
         nowPage--;
-        paginationChange(nowPage, numPages,pageElements)
+        paginationChange(nowPage, numPages, pageElements)
+        cellClick()
     })
+
+    function cellClick() {
+        $(".pag-item").click(function () {
+            nowPage = $(this).data("now");
+            paginationChange(nowPage, numPages, pageElements)
+            cellClick()
+        });
+    }
 }

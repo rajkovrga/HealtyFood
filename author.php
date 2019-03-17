@@ -19,10 +19,10 @@ showHead("Autor sajta");
             <div class="img-author col-12 col-lg-9 rounded ">
                 <img class="rounded" src="img/author.png" alt="author image">
             </div>
-            <p class="col-11 author-text">Ja sam <b> Rajko Vrga </b>iz Beograda, autor ovoga sajta.
-                Trenutno sam student Visoke ICT, završio sam srednju Elektrotehničku školu
+            <p class="col-11 author-text">Zovem se Rajko Vrga. Iz Beograda sam i autor sam ovoga sajta.
+                Trenutno sam student druge godine Visoke ICT, a završio sam srednju Elektrotehničku školu
                 u Zemunu. Za izradu ovog sajta su korišćeni PHP, JavaScript, Ajax kao i biblioteke JQuery i
-                 Bootstrap.
+                 Bootstrap. Sajt je napravljen kao predispitna obaveza za predmet Web programiranje PHP 1.
             </p>
         </div>
         

@@ -27,7 +27,7 @@ showHead("Profil korisnika");
 
 
     ?>
-    <div class="profile d-flex flex-justify-center flex-column align-items-center col-lg-7 col-sm-9 col-md-9 col-12 border  border-success rounded">
+    <div class="profile d-flex flex-justify-center flex-column align-items-center col-lg-6 col-sm-9 col-md-9 col-12 border  border-success rounded">
 
         <div class="profile-img rounded-circle">
             <img class="rounded-circle" src="<?php if($pp->UserImg == "")

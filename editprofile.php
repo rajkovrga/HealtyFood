@@ -70,11 +70,11 @@ showHead("Izmeni profil");
                     <h4 class="pass-change" >Stara lozinka</h4>
                     <input type="password"  class="form-control-success edittxt" name="oldpassword" id="oldpassword"
                          >
-                    <h4 class="pass-change" >Stara lozinka</h4>
+                    <h4 class="pass-change" >Nova lozinka</h4>
 
                     <input type="password"  class="form-control-success edittxt" name="newpassword" id="newpassword"
                          >
-                    <h4 class="pass-change" >Stara lozinka</h4>
+                    <h4 class="pass-change" >Ponovite lozinku</h4>
 
                     <input type="password" class="form-control-success edittxt"name="confirmpassword" id="confirmpassword">
 
