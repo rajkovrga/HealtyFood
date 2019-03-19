@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php
-session_start();
 
-if (!(isset($_SESSION['logged_in']) && ( $_SESSION["StatusUser"] == "Admin" || $_SESSION["StatusUser"] == "Moderator"))) {
-    Header("Location: login.php");
-}
-?>
 <?php require_once __DIR__ . '/components/head.php';
 showHead("Dodaj sadržaj");
 ?>
 <body>
 <div class="container-fluid cFluid">
-    <?php require_once __DIR__ . '/components/showMenu.php'; ?>
+    <?php require_once __DIR__ . '/components/showMenu.php';
+    if (!(isset($_SESSION['logged_in']) && ( $_SESSION["StatusUser"] == "Admin" || $_SESSION["StatusUser"] == "Moderator"))) {
+        Header("Location: login.php");
+    }?>
 
     <div id="add-content" class="col-md-12">
         <nav class=" row nav col-12 nav-pills d-flex flex-row justify-content-center" id="nav-buttons" id="pills-tab"

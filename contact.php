@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php
-session_start();
-if(!isset($_SESSION['logged_in'])) {
-        header("Location: index.php");
-}
-?>
+
 <?php require_once __DIR__ . '/components/head.php';
 showHead("Kontakt");
 ?>
 <body>
 <div class="container-fluid cFluid">
-    <?php require_once __DIR__ . '/components/showMenu.php'; ?>
+    <?php require_once __DIR__ . '/components/showMenu.php';
+    if(!isset($_SESSION['logged_in'])) {
+        header("Location: index.php");
+    }?>
 
     <h2 class='text-center titlePage'>Kontakt</h2>
     <div class="row">

@@ -1,12 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php
-
-session_start();
-if (!isset($_SESSION['logged_in'])) {
-    Header("Location: login.php");
-}
-?>
 
 <?php require_once __DIR__ . '/components/head.php';
 showHead("Recept");
@@ -16,7 +9,11 @@ showHead("Recept");
 <body>
 <div class="container-fluid cFluid d-flex flex-wrap justify-content-center flex-column align-items-center">
 
-    <?php require_once __DIR__ . '/components/showMenu.php'; ?>
+    <?php require_once __DIR__ . '/components/showMenu.php';
+
+    if (!isset($_SESSION['logged_in'])) {
+        Header("Location: login.php");
+    }?>
 
     <?php
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
-session_start();
+
 require_once __DIR__ . '/components/head.php';
 showHead("Autor sajta");
 ?>

@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php
-session_start();
-if (!isset($_SESSION['logged_in'])) {
-    Header("Location: login.php");
-}
-?>
+
 
 <?php require_once __DIR__ . '/components/head.php';
 showHead("Knjige");
@@ -14,7 +9,11 @@ showHead("Knjige");
 <body>
 <div class="container-fluid cFluid">
 
-    <?php require_once __DIR__ . '/components/showMenu.php'; ?>
+    <?php require_once __DIR__ . '/components/showMenu.php';
+
+    if (!isset($_SESSION['logged_in'])) {
+        Header("Location: login.php");
+    }?>
     <h2 class='text-center titlePage '>Knjige </h2>
     <div id="books" class="d-flex flex-column align-items-center">
 

@@ -8,6 +8,7 @@
     </button>
     <div class=" menuContent row collapse navbar-collapse col-md-9 col-lg-8 col-sm-12 col-12" id="navbarTogglerDemo02">
         <?php
+        session_start();
         require_once __DIR__ . '/../config/config.php';
         $sql = "select MenuItemName as nameMenu,MenuItemHref as href,MenuPositionName as position,StatusName as status 
                 from menu as m inner join menuposition as mp on m.MenuPositionId = mp.MenuPositionId 

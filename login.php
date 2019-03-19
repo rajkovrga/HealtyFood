@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php session_start();
 
-if (isset($_SESSION['logged_in'])) {
-    if ($_SESSION['logged_in'] == true) {
-        header("Location: index.php");
-    }
-
-}
-?>
 <?php require_once __DIR__ . '/components/head.php';
 showHead("Logovanje");
 ?>
 
 <body>
 <div class="container-fluid cFluid">
-    <?php require_once __DIR__ . '/components/showMenu.php'; ?>
+    <?php require_once __DIR__ . '/components/showMenu.php';
+
+    if (isset($_SESSION['logged_in'])) {
+        if ($_SESSION['logged_in'] == true) {
+            header("Location: index.php");
+        }
+
+    }
+
+    ?>
     <h2 class='text-center titlePage '>Logovanje</h2>
     <div class="row">
 
@@ -26,7 +27,7 @@ showHead("Logovanje");
                 <p>E-mail</p>
                 <input type="text" class=" col-sm-7 col-lg-7 col-md-7 col-xs-12 form-control " name="mail" id="mail">
                 <p>Lozinka</p>
-                <input type="password" class="col-sm-7 col-lg-7 col-md-7 col-xs-12 form-control" name="password" id="password">
+                <input type="password" class="col-sm-7 col-lg-7 col-md-7 col-xs-12 form-control" name="password" id="password"><br>
                 <input class='btn btn-outline-success border border-success' type="button" id="login" value="Logovanje">
             </form>
             <p>Niste registrovani? <a href="registration.php">Registrujte se</a></p>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <url>
+
+        <loc>http://www.healtyfoodsite.000webhostapp.com/</loc>
+
+        <lastmod>2019-3-10</lastmod>
+
+        <changefreq>weekly</changefreq>
+
+        <priority>0.9</priority>
+
+    </url>
+    <url>
+
+        <loc>http://www.healtyfoodsite.000webhostapp.com/index.php</loc>
+
+        <lastmod>2019-3-10</lastmod>
+
+        <changefreq>weekly</changefreq>
+
+        <priority>0.9</priority>
+
+    </url>
+    <url>
+
+        <loc>http://www.healtyfoodsite.000webhostapp.com/books.php</loc>
+
+        <lastmod>2019-3-10</lastmod>
+
+        <changefreq>monthly</changefreq>
+
+        <priority>0.8</priority>
+
+    </url>
+    <url>
+
+        <loc>http://www.healtyfoodsite.000webhostapp.com/recepts.php</loc>
+
+        <lastmod>2019-3-10</lastmod>
+
+        <changefreq>monthly</changefreq>
+
+        <priority>0.8</priority>
+
+    </url>
+    <url>
+
+        <loc>http://www.healtyfoodsite.000webhostapp.com/registration.php</loc>
+
+        <lastmod>2019-3-10</lastmod>
+
+        <changefreq>monthly</changefreq>
+
+        <priority>0.8</priority>
+
+    </url>
+    <url>
+
+        <loc>http://www.healtyfoodsite.000webhostapp.com/recept.php</loc>
+
+        <lastmod>2019-3-10</lastmod>
+
+        <changefreq>monthly</changefreq>
+
+        <priority>0.8</priority>
+
+    </url>
+    <url>
+
+        <loc>http://www.healtyfoodsite.000webhostapp.com/profile.php</loc>
+
+        <lastmod>2019-3-10</lastmod>
+
+        <changefreq>monthly</changefreq>
+
+        <priority>0.8</priority>
+
+    </url>
+    <url>
+
+        <loc>http://www.healtyfoodsite.000webhostapp.com/mailer.php</loc>
+
+        <lastmod>2019-3-10</lastmod>
+
+        <changefreq>monthly</changefreq>
+
+        <priority>0.8</priority>
+
+    </url>
+    <url>
+
+        <loc>http://www.healtyfoodsite.000webhostapp.com/login.php</loc>
+
+        <lastmod>2019-3-10</lastmod>
+
+        <changefreq>monthly</changefreq>
+
+        <priority>0.8</priority>
+
+    </url>
+    <url>
+
+        <loc>http://www.healtyfoodsite.000webhostapp.com/editrecept.php</loc>
+
+        <lastmod>2019-3-10</lastmod>
+
+        <changefreq>monthly</changefreq>
+
+        <priority>0.8</priority>
+
+    </url>
+    <url>
+
+        <loc>http://www.healtyfoodsite.000webhostapp.com/editprofile.php</loc>
+
+        <lastmod>2019-3-10</lastmod>
+
+        <changefreq>monthly</changefreq>
+
+        <priority>0.8</priority>
+
+    </url>
+    <url>
+
+        <loc>http://www.healtyfoodsite.000webhostapp.com/editbook.php</loc>
+
+        <lastmod>2019-3-10</lastmod>
+
+        <changefreq>monthly</changefreq>
+
+        <priority>0.8</priority>
+
+    </url>
+    <url>
+
+        <loc>http://www.healtyfoodsite.000webhostapp.com/contact.php</loc>
+
+        <lastmod>2019-3-10</lastmod>
+
+        <changefreq>monthly</changefreq>
+
+        <priority>0.8</priority>
+
+    </url>
+    <url>
+
+        <loc>http://www.healtyfoodsite.000webhostapp.com/author.php</loc>
+
+        <lastmod>2019-3-10</lastmod>
+
+        <changefreq>monthly</changefreq>
+
+        <priority>0.8</priority>
+
+    </url>
+    <url>
+
+        <loc>http://www.healtyfoodsite.000webhostapp.com/answer.php</loc>
+
+        <lastmod>2019-3-10</lastmod>
+
+        <changefreq>monthly</changefreq>
+
+        <priority>0.8</priority>
+
+    </url>
+    <url>
+
+        <loc>http://www.healtyfoodsite.000webhostapp.com/addcontent.php</loc>
+
+        <lastmod>2019-3-10</lastmod>
+
+        <changefreq>monthly</changefreq>
+
+        <priority>0.8</priority>
+
+    </url>
+    <url>
+
+        <loc>http://www.healtyfoodsite.000webhostapp.com/users.php</loc>
+
+        <lastmod>2019-3-10</lastmod>
+
+        <changefreq>monthly</changefreq>
+
+        <priority>0.8</priority>
+
+    </url>
+</urlset>

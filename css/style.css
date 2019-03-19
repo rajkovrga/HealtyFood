@@ -993,6 +993,30 @@ font-size: 1.24em;
 .bf-color-replace{
     background-color: #56ba42;
 }
+#answers
+{
+    padding:26px 0px !important;
+    width: 270px !important;
+}
+#answers p
+{
+    color:#56ba42;
+    font-weight: bold;
+    font-size: 1.3em !important;
+}
+#answers table
+{
+    margin-bottom: 20px !important;
+    background: #56ba42;
+
+}
+#answers .tr
+{
+   padding:4px 20px !important;
+    padding-left: 3px !important;
+}
+
+
 @media screen and (max-width: 767px) {
     .dropMenu {
         background: rgba(53, 185, 53, 0.253) !important;

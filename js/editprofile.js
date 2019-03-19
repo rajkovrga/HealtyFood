@@ -118,8 +118,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 })
 
                 let obj = {
-                    "new": newPassword,
-                    "old": oldPassword
+                    "new": newPassword.value,
+                    "old": oldPassword.value
                 }
                 xr.send(JSON.stringify(obj));
 

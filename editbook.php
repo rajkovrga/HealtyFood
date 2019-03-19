@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php
-session_start();
+
+<?php require_once __DIR__ . '/components/head.php';
+showHead("Izmeni knjigu");
+?>
+<body>
+<div class="container-fluid cFluid">
+    <?php require_once __DIR__ . '/components/showMenu.php';
+
 
 if (!(isset($_SESSION['logged_in']) && ($_SESSION["StatusUser"] == "Admin" || $_SESSION["StatusUser"] == "Moderator"))) {
     Header("Location: login.php");
@@ -33,12 +39,6 @@ else
     }
 }
 ?>
-<?php require_once __DIR__ . '/components/head.php';
-showHead("Izmeni knjigu");
-?>
-<body>
-<div class="container-fluid cFluid">
-    <?php require_once __DIR__ . '/components/showMenu.php'; ?>
 
     <div id="add-content" class="col-md-12">
                 <h2 class='text-center titlePage title-add'>Dodaj knjigu</h2>
@@ -60,7 +60,7 @@ showHead("Izmeni knjigu");
 
                             </div>
                             <input type="button" name="editbook" id="editbook" data-id="<?php echo $_GET["ID"];?> " class='btn btn-outline-success'
-                                   value="Dodaj">
+                                   value="Izmeni">
 
                             <p class="addresult"></p>
 

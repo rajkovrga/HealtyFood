@@ -1,45 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php
-session_start();
 
-if (!(isset($_SESSION['logged_in']) && ($_SESSION["StatusUser"] == "Admin" || $_SESSION["StatusUser"] == "Moderator"))) {
-    Header("Location: login.php");
-}
-else
-{
-    if(!isset($_GET['ID']))
-    {
-        Header("Location: recepts.php");
-    }
-    else
-    {
-        $id = $_GET["ID"];
-        $sqlExist = "SELECT * FROM recepts where ReceptId = :id";
-        include __DIR__ . '/config/config.php';
-        $find = $pdo->prepare($sqlExist);
-        $find->execute([":id" => $id]);
-        if($find->rowCount() == 0)
-        {
-            unset($pdo);
-            header("Location: recepts.php");
-        }
-        $r = $find->fetch();
-        $sqlImages = "SELECT SrcImage as src, i.ImageId as id from imagerecept im inner join images i
-  on im.ImageID = i.ImageID where im.ReceptId = :id";
-        $photos = $pdo->prepare($sqlImages);
-        $photos->execute([":id" => $id]);
-       $result = $photos->fetchAll();
-
-    }
-}
-?>
 <?php require_once __DIR__ . '/components/head.php';
 showHead("Izmeni recept");
 ?>
 <body>
 <div class="container-fluid cFluid">
-    <?php require_once __DIR__ . '/components/showMenu.php'; ?>
+    <?php require_once __DIR__ . '/components/showMenu.php';
+
+    if (!(isset($_SESSION['logged_in']) && ($_SESSION["StatusUser"] == "Admin" || $_SESSION["StatusUser"] == "Moderator"))) {
+        Header("Location: login.php");
+    }
+    else
+    {
+        if(!isset($_GET['ID']))
+        {
+            Header("Location: recepts.php");
+        }
+        else
+        {
+            $id = $_GET["ID"];
+            $sqlExist = "SELECT * FROM recepts where ReceptId = :id";
+            include __DIR__ . '/config/config.php';
+            $find = $pdo->prepare($sqlExist);
+            $find->execute([":id" => $id]);
+            if($find->rowCount() == 0)
+            {
+                unset($pdo);
+                header("Location: recepts.php");
+            }
+            $r = $find->fetch();
+            $sqlImages = "SELECT SrcImage as src, i.ImageId as id from imagerecept im inner join images i
+  on im.ImageID = i.ImageID where im.ReceptId = :id";
+            $photos = $pdo->prepare($sqlImages);
+            $photos->execute([":id" => $id]);
+            $result = $photos->fetchAll();
+
+        }
+    }
+    ?>
 
     <div id="add-content" class="col-md-12">
 

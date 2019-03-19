@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php
-session_start();
 
-if(isset($_SESSION['logged_in'])) {
-    if ($_SESSION['logged_in'] == true) {
-        header("Location: index.php");
-    }
-}
-?>
 <?php require_once __DIR__ . '/components/head.php';
 showHead("Registracija");
 ?>
 <body>
   <div class="container-fluid cFluid">
-      <?php require_once __DIR__ . '/components/showMenu.php'; ?>
+      <?php require_once __DIR__ . '/components/showMenu.php';
+
+      if(isset($_SESSION['logged_in'])) {
+          if ($_SESSION['logged_in'] == true) {
+              header("Location: index.php");
+          }
+      }
+
+      ?>
 
       <h2 class='text-center titlePage'>Registracija</h2>
       <div class="row">

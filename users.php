@@ -1,12 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php
-
-session_start();
-if (!(isset($_SESSION['logged_in']) && ($_SESSION["StatusUser"] == "Admin"))) {
-    Header("Location: login.php");
-}
-?>
 
 <?php require_once __DIR__ . '/components/head.php';
 showHead("Korisnici");
@@ -16,7 +9,12 @@ showHead("Korisnici");
 <body>
 <div class="container-fluid cFluid d-flex flex-wrap align-items-center flex-column justify-content-center">
 
-    <?php require_once __DIR__ . '/components/showMenu.php'; ?>
+    <?php require_once __DIR__ . '/components/showMenu.php';
+    if (!(isset($_SESSION['logged_in']) && ($_SESSION["StatusUser"] == "Admin"))) {
+        Header("Location: login.php");
+    }
+
+    ?>
 
     <?php
 

@@ -28,6 +28,8 @@ document.addEventListener('DOMContentLoaded',function () {
         let passwordResult = regexFind(regPass,passFirst,"Lozinka nije odgovarajuca");
         let passEquals = equalsFind(passFirst,passSecond);
 
+
+
         if(usernameResult && fNameResult && lNameResult && mailResult && passwordResult && passEquals)
         {
 

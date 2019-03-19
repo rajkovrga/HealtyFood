@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php
-session_start();
-if (!isset($_SESSION['logged_in'])) {
-    Header("Location: login.php");
-}
-?>
+
 <?php require_once __DIR__ . '/components/head.php';
 showHead("Izmeni profil");
 ?>
@@ -13,7 +8,10 @@ showHead("Izmeni profil");
 <body>
 <div class="container-fluid cFluid d-flex flex-justify-center flex-column align-items-center">
 
-    <?php require_once __DIR__ . '/components/showMenu.php'; ?>
+    <?php require_once __DIR__ . '/components/showMenu.php';
+    if (!isset($_SESSION['logged_in'])) {
+        Header("Location: login.php");
+    }?>
     <?php
 
     include __DIR__ . '/config/config.php';

@@ -23,11 +23,19 @@ try
 
         $SQLRecept = "UPDATE recepts SET UserId = :newValue where UserId = :id";
         $receptQuery = $pdo->prepare($SQLRecept);
-        $receptQuery->execute([":id"=>$id, ":newValue" => $_SESSION["UserId"]]);
+        $receptQuery->execute([":id"=>$id, ":newValue" => null]);
 
         $SQLBook = "UPDATE books SET UserId = :newValue where UserId = :id";
         $bookQuery = $pdo->prepare($SQLBook);
-        $bookQuery->execute([":id"=>$id, ":newValue" => $_SESSION["UserId"]]);
+        $bookQuery->execute([":id"=>$id, ":newValue" =>null]);
+
+        $SQLQuestion = "UPDATE questions SET UserId = :newValue where UserId = :id";
+        $questionQuery = $pdo->prepare($SQLBook);
+        $questionQuery->execute([":id"=>$id, ":newValue" =>null]);
+
+        $SQLAnswer = "UPDATE answeruser SET UserId = :newValue where UserId = :id";
+        $questionQuery = $pdo->prepare($SQLBook);
+        $questionQuery->execute([":id"=>$id, ":newValue" =>null]);
 
         $sqlDelete = "DELETE FROM users where UserId = :id";
         $deleteQuery = $pdo->prepare($sqlDelete);

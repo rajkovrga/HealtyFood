@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php
-session_start();
+
+<?php require_once __DIR__ . '/components/head.php';
+showHead("Odgovaranje na poruku");
+?>
+<body>
+<div class="container-fluid cFluid">
+    <?php require_once __DIR__ . '/components/showMenu.php';
+
 if (!(isset($_SESSION['logged_in']) && $_SESSION["StatusUser"] == "Admin")) {
     Header("Location: index.php");
 } else {
@@ -23,12 +29,6 @@ if (!(isset($_SESSION['logged_in']) && $_SESSION["StatusUser"] == "Admin")) {
     }
 }
 ?>
-<?php require_once __DIR__ . '/components/head.php';
-showHead("Odgovaranje na poruku");
-?>
-<body>
-<div class="container-fluid cFluid">
-    <?php require_once __DIR__ . '/components/showMenu.php'; ?>
 
     <h2 class='text-center titlePage'>Odgovorite</h2>
     <div class="row">
