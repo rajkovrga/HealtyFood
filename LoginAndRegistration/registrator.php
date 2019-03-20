@@ -1,7 +1,6 @@
 <?php
 
 $dataRegistration = file_get_contents('php://input');
-
 $obj = json_decode($dataRegistration);
 $passwordReg = '/^(?=.*[\d])(?=.*[A-ZČĆŠĐŽ])(?=.*[a-zšđžčć])(?=.*[!@#$%^&*])*[\w!@#$%^&*]{8,}$/';
 $firstLastNameReg = '/^([A-ZČĆŠĐŽ][a-zšđžčć]{2,12})[\s]*$/';
@@ -33,10 +32,11 @@ if (preg_match($passwordReg, $obj->UserPassword) &&
             ':token' => $token
         ]);
 
-        require_once __DIR__ . '\..\SendMail\activationLink.php';
+        include __DIR__ . '\..\SendMail\activationLink.php';
         sendActivationLink($obj->UserMail,$token,$obj->Username);
-        http_response_code(200);
         unset($pdo);
+        http_response_code(200);
+
     } else {
         http_response_code(423);
         unset($pdo);

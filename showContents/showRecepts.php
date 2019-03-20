@@ -44,8 +44,15 @@ try
             </div>
             ";
     }
-$objRet = ["countItems" => $num,
+
+    $sqlAll = "SELECT r.ReceptId as IdRecept,SrcImage,ReceptTitle FROM recepts r INNER JOIN imagerecept ir ON r.ReceptId = ir.ReceptId 
+      inner join images i on ir.ImageID = i.ImageID where ReceptTitle LIKE :likee GROUP BY ir.ReceptId 
+      order by ReceptDate desc";
+    $allRecepts = $pdo->prepare($sqlAll);
+    $allRecepts->execute([":likee" => $like]);
+$objRet = ["countItems" => $allRecepts->rowCount(),
     "result" =>$recepts];
+unset($pdo);
         echo json_encode($objRet);
 
 }
