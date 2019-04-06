@@ -7,7 +7,7 @@ echo $id;
 $sqlUser = "SELECT * FROM users where UserId = :id AND StatusId != :admin AND StatusId != :moder";
 require_once __DIR__ . '/../config/config.php';
 $userQuery = $pdo->prepare($sqlUser);
-$userQuery->execute([":id"=>$id, ":admin" => "1",":moder" => "2"]);
+$userQuery->execute([":id"=>$id, ":admin" => "1",":moder" => "3"]);
 $userResult = $userQuery->fetch();
 try
 {
